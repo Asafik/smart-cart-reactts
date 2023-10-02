@@ -1,0 +1,168 @@
+/* product */
+.detail-product {
+    background-color: #fee505;
+    padding: 10px;
+    width: 90%;
+    height: 600px; /* Mengatur tinggi elemen menjadi 100px */
+    display: flex;
+    justify-content: center; /* Mengatur elemen ke tengah secara horizontal */
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 6%;
+}
+
+.half-box {
+    margin-top: 18%;
+    width: 95%; /* Lebar kotak */
+    height: 300px; /* Tinggi kotak setengah */
+    background-color: #ffa506; /* Warna latar belakang */
+    border-bottom-left-radius: 50px; /* Border radius untuk sudut kiri bawah */
+    border-bottom-right-radius: 50px; /* Border radius untuk sudut kanan bawah */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Properti box-shadow dengan offset-x, offset-y, blur-radius, dan warna bayangan */
+}
+
+/* Gaya untuk kotak Swiper */
+.Swiper-product {
+    width: 100%;
+    height: auto;
+}
+
+/* Gaya untuk setiap slide dalam Swiper */
+.swiper-slider-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    margin-top: -20%;
+}
+
+/* Gaya untuk kotak (box) yang melingkupi gambar dan teks */
+.box-product {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Posisikan elemen secara vertical ke atas */
+    align-items: flex-start; /* Posisikan elemen secara horizontal ke kiri */
+    width: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    margin-left: 130px;
+    border-radius: 10%;
+    padding-right: 30px;
+}
+
+/* Gaya untuk gambar dalam kotak */
+.box-product img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-left: 13px;
+}
+
+.box-product h5 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    margin-left: 20px;
+}
+/* Gaya untuk teks dalam kotak */
+.box-product p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin: 0px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.cart-icons-product {
+    position: absolute;
+    top: 89%;
+    right: 30px; /* Adjust this value to control the distance from the right edge */
+    transform: translateY(-50%);
+    background-color: #ffa506;
+    padding: 5px;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+/* product */
+
+/* detail Product */
+.custom-image {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40%;
+}
+
+.photo-detail-page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 20%;
+}
+
+.photo-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.detail-column {
+    flex: 2;
+    padding: 10px;
+}
+
+/* Gaya CSS untuk rating bintang */
+.star {
+    color: orange;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.counter-button {
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.counter-button:hover {
+    background-color: #000000;
+}
+
+.counter-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Tambahkan ke file CSS Anda */
+
+.buy-now-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 10px; /* Mengatur jarak antara tombol "FaPlus" dan "Beli Sekarang" */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 40px;
+    font-weight: bold;
+}
+
+.buy-now-button:hover {
+    background-color: #000000;
+}
+/* detail Product */

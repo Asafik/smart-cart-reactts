@@ -1,0 +1,692 @@
+/* home */
+header {
+    background: linear-gradient(to bottom, #feb900, #ffe500);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex; /* Menggunakan Flexbox untuk mengatur tata letak baris */
+    align-items: center; /* Pusatkan vertikal konten dalam baris */
+    justify-content: space-between; /* Letakkan kolom pada ujung kiri dan kanan */
+}
+
+.home header h1 {
+    font-size: 60px; /* Ganti dengan ukuran huruf yang Anda inginkan */
+    font-weight: bold;
+    color: white;
+    flex: 1;
+}
+
+/* CSS untuk mengatur ukuran huruf pada elemen p */
+.home header p {
+    font-size: 20px; /* Ganti dengan ukuran huruf yang Anda inginkan */
+    color: white;
+    flex: 1;
+}
+
+/* style.css */
+
+.custom-link {
+    background-color: #fee505;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    box-shadow:
+        0 10px 4px #7edf1d,
+        10px 10px 4px #7edf1d;
+    margin-top: 20px;
+}
+
+.custom-link:hover {
+    background-color: orange; /* Warna ketika tautan dihover */
+    box-shadow:
+        0 10px 4px #7edf1d,
+        10px 10px 4px #7edf1d;
+}
+
+.custom-link .cart-box {
+    display: inline-block;
+    background-color: #7edf1d;
+    padding: 5px;
+    border-radius: 40%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.home img {
+    max-width: 100%; /* Maksimum lebar gambar adalah 100% dari lebar kontainer (Col) */
+    height: auto; /* Tinggi gambar akan disesuaikan agar aspek rasio gambar tetap terjaga */
+    margin-top: 100px;
+    margin-left: 50px;
+    flex: 1;
+}
+
+/* CSS untuk mengatur tampilan pada layar 576px atau kurang */
+@media (max-width: 1200px) {
+    container {
+        max-width: 1200px;
+    }
+
+    .home header h1 {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+
+    .home header p {
+        font-size: 17px; /* Mengurangi ukuran huruf paragraf pada layar 576px */
+    }
+
+    @media (max-width: 991px) {
+        .home header {
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .home header h1 {
+            font-size: 40px;
+            margin-top: 80px;
+        }
+
+        .home header p {
+            font-size: 15px; /* Mengurangi ukuran huruf paragraf pada layar 576px */
+        }
+
+        .home header img {
+            width: 60%; /* Lebar gambar 70% agar sesuai dengan lebar parent (Col 6) */
+            max-width: none; /* Mengabaikan maksimum lebar agar gambar lebih lebar */
+            height: auto;
+            margin-top: -10px;
+        }
+
+        @media (max-width: 767px) {
+            .home header {
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-top: 50px;
+            }
+
+            .home header h1 {
+                font-size: 40px;
+                margin-top: 80px;
+            }
+
+            .home header p {
+                font-size: 15px; /* Mengurangi ukuran huruf paragraf pada layar 576px */
+            }
+
+            .home header img {
+                width: 80%; /* Lebar gambar 70% agar sesuai dengan lebar parent (Col 6) */
+                max-width: none; /* Mengabaikan maksimum lebar agar gambar lebih lebar */
+                height: auto;
+                margin-top: -10px;
+            }
+
+            /* CSS untuk mengatur tampilan pada layar 576px atau kurang */
+            @media (max-width: 576px) {
+                .home header {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    margin-top: -10px; /* Mengurangi margin atas header pada layar 576px */
+                }
+
+                .home header h1 {
+                    font-size: 40px; /* Mengurangi ukuran huruf h1 pada layar 576px */
+                    margin-top: 0; /* Menghilangkan margin atas h1 pada layar 576px */
+                }
+
+                .home header p {
+                    font-size: 16px; /* Mengurangi ukuran huruf paragraf pada layar 576px */
+                    margin-top: 10px; /* Mengurangi margin atas paragraf pada layar 576px */
+                }
+
+                .home header img {
+                    width: 70%; /* Lebar gambar 70% agar sesuai dengan lebar parent (Col 6) */
+                    max-width: none; /* Mengabaikan maksimum lebar agar gambar lebih lebar */
+                    height: auto;
+                    margin-top: 20px; /* Menambah margin atas gambar pada layar 576px */
+                }
+            }
+            /* CSS untuk mengatur tampilan pada layar 576px atau kurang */
+            @media (max-width: 462px) {
+                .home header {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    margin-top: 0;
+                }
+
+                .home header h1 {
+                    font-size: 35px;
+                }
+
+                .home header p {
+                    font-size: 14px; /* Mengurangi ukuran huruf paragraf pada layar 576px */
+                }
+
+                .home header img {
+                    width: 90%; /* Lebar gambar 70% agar sesuai dengan lebar parent (Col 6) */
+                    max-width: none; /* Mengabaikan maksimum lebar agar gambar lebih lebar */
+                    height: auto;
+                }
+                @media (max-width: 406px) {
+                    .home header {
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        margin-top: 0;
+                    }
+
+                    .home header h1 {
+                        font-size: 33px;
+                    }
+
+                    .home header p {
+                        font-size: 13px; /* Mengurangi ukuran huruf paragraf pada layar 576px */
+                    }
+
+                    .home header img {
+                        width: 90%; /* Lebar gambar 70% agar sesuai dengan lebar parent (Col 6) */
+                        max-width: none; /* Mengabaikan maksimum lebar agar gambar lebih lebar */
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Gaya untuk kotak Swiper */
+.mySwiper {
+    width: 100%;
+    height: auto;
+}
+
+/* Gaya untuk setiap slide dalam Swiper */
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+/* Gaya untuk kotak (box) yang melingkupi gambar dan teks */
+.box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Posisikan elemen secara vertical ke atas */
+    align-items: flex-start; /* Posisikan elemen secara horizontal ke kiri */
+    width: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    margin-left: 130px;
+    border-radius: 10%;
+    padding-right: 30px;
+}
+
+/* Gaya untuk gambar dalam kotak */
+.box img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-left: 13px;
+}
+
+.box h5 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    margin-left: 20px;
+}
+/* Gaya untuk teks dalam kotak */
+.box p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin: 0px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.cart-icons {
+    position: absolute;
+    top: 89%;
+    right: 30px; /* Adjust this value to control the distance from the right edge */
+    transform: translateY(-50%);
+    background-color: #ffa506;
+    padding: 5px;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.custom-box {
+    width: 90%; /* Ganti ukuran sesuai keinginan Anda */
+    height: 500px; /* Ganti ukuran sesuai keinginan Anda */
+    background: linear-gradient(
+        to bottom,
+        #feb900,
+        #ffe500
+    ); /* Ganti warna gradien sesuai keinginan Anda */
+
+    border-radius: 40px; /* Opsi: tambahkan sudut melengkung sesuai keinginan Anda */
+
+    /* Menengahkan horizontal elemen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-box h3 {
+    font-size: 40px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 10px; /* Sesuaikan jarak antara judul dan teks */
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.custom-box p {
+    font-size: 20px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 20px; /* Sesuaikan jarak antara paragraf */
+    color: white;
+    text-align: justify;
+}
+
+.custom-box img {
+    max-width: 100%; /* Gambar tidak melebihi lebar kotak */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+    display: block; /* Hilangkan spasi di bawah gambar */
+    margin: 0 auto; /* Tengahkan gambar horizontal */
+}
+
+.selengkapnya-link {
+    background-color: #6bee0d; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    display: inline-block;
+    padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 5px; /* Sudut melengkung */
+    text-decoration: none; /* Hapus garis bawah dari tautan */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+    font-weight: bold;
+}
+
+.selengkapnya-link:hover {
+    background-color: #2e12e3; /* Warna latar belakang saat dihover */
+}
+
+.chevron-right {
+    margin-left: 5px; /* Jarak antara teks dan ikon panah kanan */
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    margin-top: -150px;
+}
+
+.text-center h1 {
+    font-size: 30px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin: 0; /* Hapus margin bawaan */
+    background-color: #ffa506; /* Warna latar belakang */
+    padding: 10px; /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 40px;
+}
+
+.marketpeace {
+    display: flex;
+    justify-content: center; /* Mengatur agar konten berada di tengah horizontal */
+    align-items: center; /* Mengatur agar konten sejajar vertikal */
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk semua gambar dalam .marketpeace */
+.marketpeace .image {
+    width: 230px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin: 0 20px; /* Sesuaikan jarak antara gambar */
+}
+
+.marketpeace .tiktok {
+    width: 250px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin: 0 20px; /* Sesuaikan jarak antara gambar */
+    margin-top: 10px;
+}
+/* home */
+
+/* status */
+
+.box-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Untuk mengatur teks menjadi tengah */
+    gap: 20px; /* Sesuaikan dengan jarak antara elemen-elemen */
+}
+
+.box-container {
+    text-align: center; /* Untuk mengatur teks di dalamnya menjadi tengah */
+    margin-right: 60px;
+    margin-left: 50px;
+}
+
+.box-container img {
+    width: 50px; /* Ukuran gambar yang sama */
+    height: 50px; /* Ukuran gambar yang sama */
+}
+
+.box-text,
+.fastdelivery-text,
+.arrival-text {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffa506;
+}
+
+.box-container .line-left {
+    position: absolute;
+    height: 2px; /* Ketebalan garis */
+    width: 180px; /* Panjang garis */
+    top: 30%; /* Posisi vertikal garis */
+    background-color: #ffa506; /* Warna garis */
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.box-container .line-right {
+    position: absolute;
+    height: 2px; /* Ketebalan garis */
+    width: 180px; /* Panjang garis */
+    top: 30%; /* Posisi vertikal garis */
+    background-color: #ffa506; /* Warna garis */
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+.no-pesanan {
+    display: flex;
+    align-items: center; /* Mengatur agar konten sejajar vertikal */
+    padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+    background-color: #fee505;
+    border-radius: 5px; /* Sudut melengkung border */
+    color: white;
+    width: 520px; /* Sesuaikan lebar sesuai kebutuhan */
+    height: 100px; /* Sesuaikan tinggi sesuai kebutuhan */
+    box-shadow: 0 10px 1px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.shoppingcart {
+    width: 40px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 40px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin-right: 10px; /* Sesuaikan jarak antara gambar dan teks */
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.no-pesanan h3 {
+    margin: 0; /* Hapus margin bawaan pada teks */
+}
+
+.detail-pesanan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Warna latar belakang kotak */
+    padding: 10px; /* Padding untuk ruang di sekitar elemen */
+}
+
+.detail-pesanan {
+    background-color: white; /* Warna latar belakang elemen detail pesanan */
+    padding: 20px; /* Padding untuk elemen detail pesanan */
+    max-width: 520px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+    width: 100%; /* Untuk mengisi lebar container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.detail-pesanan img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.order-details {
+    display: flex;
+    align-items: center;
+}
+
+.order-text {
+    margin-left: 30px; /* Sesuaikan jarak antara gambar dan teks sesuai kebutuhan */
+}
+
+.order-text p:first-child {
+    font-size: 24px; /* Ubah ukuran teks "Animal Smart Card" sesuai kebutuhan Anda */
+}
+.order-text p {
+    margin: 5px 0; /* Sesuaikan jumlah margin sesuai kebutuhan Anda */
+}
+
+.order-text p:nth-child(2) span {
+    margin-left: 135px;
+}
+
+.order-text p:nth-child(4) span {
+    margin-left: 120px;
+}
+
+.order-text hr {
+    margin: -5px 0;
+}
+
+.ok-pesanan {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ok-pesanan-button {
+    padding: 10px 50px;
+    background-color: #ffa506;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* status */
+
+/* about */
+
+.about {
+    width: 90%; /* Ganti ukuran sesuai keinginan Anda */
+    height: 500px; /* Ganti ukuran sesuai keinginan Anda */
+    background: linear-gradient(
+        to bottom,
+        #feb900,
+        #ffe500
+    ); /* Ganti warna gradien sesuai keinginan Anda */
+
+    border-radius: 40px; /* Opsi: tambahkan sudut melengkung sesuai keinginan Anda */
+
+    /* Menengahkan horizontal elemen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about h3 {
+    font-size: 40px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 10px; /* Sesuaikan jarak antara judul dan teks */
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.about p {
+    font-size: 20px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 20px; /* Sesuaikan jarak antara paragraf */
+    color: white;
+    text-align: justify;
+}
+
+.about img {
+    max-width: 100%; /* Gambar tidak melebihi lebar kotak */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+    display: block; /* Hilangkan spasi di bawah gambar */
+    margin: 0 auto; /* Tengahkan gambar horizontal */
+}
+
+.about-two h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffa506;
+  }
+
+  .about-two img {
+    max-width: 100%; /* Gambar tidak melebihi lebar kontainer */
+    display: block; /* Hilangkan margin putih di bawah gambar */
+    margin: 0 auto; /* Pusatkan gambar secara horizontal */
+}
+
+/* about */
+
+/* cart */
+.navbar-cart .line-vertikal {
+    border-left: 2px solid #000000;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.navbar-cart .text-cart {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icon-box-cart {
+    display: inline-block; /* Menggunakan inline-block untuk sejajarkan horizontal */
+    font-size: 24px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan ikon berikutnya */
+    background-color: #ffa506;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+/* Mengatur warna dan ukuran ikon pengguna */
+.icon-box-cart:last-child {
+    color: #ffffff; /* Warna ikon kedua */
+    font-size: 15px;
+}
+
+.w-100.min-vh-100 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.kerajang-saya {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 85%;
+    margin-top: -200px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produk {
+    margin-right: 200px;
+    margin-left: 50px;
+}
+
+.harga-satuan {
+    margin-left: 200px;
+}
+
+.aksi {
+    margin-right: 90px;
+}
+
+.keranjang-saya-detail {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    background-color: white;
+    width: 85%;
+    margin-top: -100px;
+}
+
+.keranjang-saya-detail img {
+    max-width: 100px; /* Atur lebar maksimum gambar */
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+.keranjang-saya-detail h2 {
+    font-size: 28px; /* Ukuran font judul */
+    font-weight: bold;
+    color: #ffa506;
+    margin: 0;
+}
+
+.harga-detail {
+    margin-left: 200px;
+    color: #ffa506;
+    font-weight: bold;
+}
+
+.total-detail {
+    margin-left: 290px;
+    font-weight: bold;
+    color: #ffa506;
+}
+
+.hapus-detail {
+    margin-left: 100px;
+    font-weight: bold;
+    color: #ffa506;
+    cursor: pointer;
+}
+
+/* Gaya untuk elemen .detail-bayar */
+.detail-bayar {
+    font-weight: bold; /* Teks tebal */
+    position: absolute; /* Mengatur posisi absolut */
+    top: 63%; /* Menggeser elemen ke atas */
+    right: 7%;
+    margin-right: 5px;
+}
+
+/* Gaya untuk tautan di dalam .detail-bayar */
+.detail-bayar a {
+    background-color: #ffa506;
+    padding: 5px 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/* cart */
