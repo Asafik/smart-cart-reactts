@@ -1,0 +1,258 @@
+/* Sidebar.css */
+.user-title {
+    text-align: center;
+    background-color: #ffa506;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    padding: 15px;
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan */
+    margin-top: 45px;
+}
+
+.user-avatar {
+    width: 65px; /* Sesuaikan lebar gambar avatar */
+    height: 60px; /* Sesuaikan tinggi gambar avatar */
+    border-radius: 50%; /* Membuat gambar avatar menjadi lingkaran */
+    margin-right: 10px; /* Jarak antara gambar dan nama pengguna */
+}
+
+.user-name {
+    color: #fff; /* Warna teks nama pengguna */
+    padding: 5px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-status {
+    display: flex;
+    align-items: center;
+}
+
+.online-text {
+    font-size: 14px; /* Ubah ukuran teks sesuai kebutuhan */
+
+    margin-left: 5px; /* Jarak antara teks "Online" dan lingkaran status */
+}
+
+.online-circle {
+    width: 12px; /* Ubah lebar sesuai kebutuhan */
+    height: 12px; /* Ubah tinggi sesuai kebutuhan */
+    border-radius: 50%;
+    background-color: #00ff00; /* Warna hijau */
+    margin-left: 5px; /* Jarak antara lingkaran dan teks "Online" */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Latar belakang putih */
+    padding: 5px 10px; /* Sesuaikan padding sesuai kebutuhan */
+    margin-bottom: 10px; /* Jarak bawah dari kotak pencarian */
+    border-radius: 5px; /* Untuk sudut kotak yang sedikit membulat */
+    margin-top: 10px;
+}
+
+.search-input {
+    flex: 1; /* Membuat input kotak pencarian memenuhi sisa ruang */
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Warna latar belakang ikon pencarian */
+    color: #878484; /* Warna ikon */
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%; /* Sesuaikan tinggi dengan kebutuhan */
+    background-color: #333;
+    color: #fff;
+    width: 300px; /* Lebar sidebar sesuaikan dengan kebutuhan */
+    padding: 20px;
+    overflow-y: auto; /* Tambahkan scroll jika kontennya lebih panjang daripada tinggi sidebar */
+}
+
+.navigations,
+.setting {
+    background-color: rgb(5, 5, 5); /* Latar belakang hitam */
+    padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan */
+    margin-bottom: 5px; /* Jarak bawah antara menu */
+    margin-left: -20px; /* Margin kiri untuk mencapai tepi kiri */
+    margin-right: -20px; /* Margin kanan untuk mencapai tepi kanan */
+    font-size: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    display: block; /* Setiap menu diubah menjadi blok sehingga menu disusun secara vertikal */
+    margin-bottom: 18px; /* Jarak antara setiap menu */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    margin-left: 10px;
+    padding: 3px 0px;
+    font-size: 20px;
+}
+
+.nav-link svg {
+    margin-right: 10px; /* Jarak antara ikon dan teks menu */
+}
+
+.nav-link:hover {
+    color: #000000; /* Warna saat mouse hover */
+    background-color: #ffffff; /* Warna latar belakang saat mouse hover (gelap) */
+    border-radius: 5px; /* Radius sudut kotak */
+    padding: 3px 10px;
+}
+
+/* navbar-dashboard */
+/* Navbar.css */
+.navbar-dashboard {
+    background-color: #ffa506;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.navbar-dashboard.open {
+    margin-left: 17%;
+}
+
+
+
+
+.left-icons-dashboard {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.right-icons-dashboard {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* Styling for individual icons */
+.iconss.FaEnvelope,
+.iconss.FaFlag,
+.iconss.FaBell {
+    margin-right: 30px;
+    color: #fff; /* Warna ikon Bars, Envelope, Flag, Bell, dan SignOutAlt */
+}
+
+.right-icons-dashboard img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 20px;
+    margin-right: 0;
+    color: #fff; /* Warna nama */
+}
+
+.iconss.FaBars {
+    cursor: pointer;
+}
+
+.iconss.FaEnvelope {
+    cursor: pointer;
+}
+
+.iconss.FaBell {
+    cursor: pointer;
+}
+
+.iconss.FaFlag {
+    cursor: pointer;
+}
+
+/* Custom CSS for dropdown menu */
+.dropdown-menu a:hover {
+    background-color: #ffa506; /* Warna latar belakang saat dihover */
+    color: #fff; /* Warna teks saat dihover */
+}
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -1px;
+    right: 20px;
+    color: #fff; /* Warna teks putih */
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0px 5px; /* Sesuaikan ukuran badge sesuai kebutuhan */
+    font-size: 10px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+}
+.green-badge {
+    background-color: #008900; /* Warna latar belakang hijau */
+    /* CSS lainnya */
+}
+
+.blue-badge {
+    background-color: #0000FF; /* Warna latar belakang biru */
+    /* CSS lainnya */
+}
+
+.red-badge {
+    background-color: #FF0000; /* Warna latar belakang merah */
+    /* CSS lainnya */
+}
+
+
+/* CSS untuk sidebar yang tertutup */
+.sidebar {
+    min-width: 0; /* Atau Anda bisa mencoba padding-left: 0; */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+/* CSS untuk sidebar yang terbuka */
+.sidebar.open {
+    transform: translateX(0);
+   
+}
+
+
+
+
+/* navbar-dashboard */

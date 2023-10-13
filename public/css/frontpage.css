@@ -553,12 +553,51 @@ header {
     margin-bottom: 20px;
     text-align: center;
     color: #ffa506;
-  }
+}
 
-  .about-two img {
-    max-width: 100%; /* Gambar tidak melebihi lebar kontainer */
+.about-two img {
+    max-width: 90%; /* Gambar tidak melebihi lebar kontainer */
     display: block; /* Hilangkan margin putih di bawah gambar */
     margin: 0 auto; /* Pusatkan gambar secara horizontal */
+}
+
+.about-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Menambahkan jarak antara dua set gambar di bawahnya */
+}
+
+.image-text {
+    text-align: center;
+    margin-top: 5%;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 20px; /* Menambahkan margin kiri */
+    margin-right: 20px; /* Menambahkan margin kanan */
+}
+.image-text img {
+    margin: 5px;
+    max-width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.image-text p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    font-weight: bold;
+}
+
+.image-text {
+    text-align: center;
+    margin-top: 5px;
+    padding: 0px; /* Menambahkan padding ke dalam kotak */
+    border-radius: 20px; /* Mengatur sudut border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* about */

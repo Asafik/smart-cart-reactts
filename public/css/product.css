@@ -9,6 +9,7 @@
     align-items: center;
     border-radius: 50px;
     margin-top: 6%;
+    position: relative;
 }
 
 .half-box {
@@ -18,6 +19,7 @@
     background-color: #ffa506; /* Warna latar belakang */
     border-bottom-left-radius: 50px; /* Border radius untuk sudut kiri bawah */
     border-bottom-right-radius: 50px; /* Border radius untuk sudut kanan bawah */
+    position: absolute;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Properti box-shadow dengan offset-x, offset-y, blur-radius, dan warna bayangan */
 }
 
@@ -35,7 +37,7 @@
     text-align: center;
     padding: 20px;
     background-color: transparent;
-    margin-top: -20%;
+    margin-top: 0;
 }
 
 /* Gaya untuk kotak (box) yang melingkupi gambar dan teks */

@@ -1,10 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link dari react-router-dom
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const login = () => {
+const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [showAlert, setShowAlert] = useState(false); // State untuk menampilkan alert kesalahan
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+
+        // Di sini Anda bisa melakukan validasi email dan password
+        // Misalnya, jika validasi gagal, tampilkan alert kesalahan
+        if (email !== 'email@example.com' || password !== 'password123') {
+            setShowAlert(true);
+
+            // Set timeout untuk menghilangkan notifikasi kesalahan setelah 3 detik
+            setTimeout(() => {
+                setShowAlert(false);
+            }, 3000);
+        } else {
+            // Jika email dan password benar, arahkan ke halaman dashboard
+            window.location.href = '/dashboard';
+        }
+    };
+
     return (
         <div className='Auth-form-container'>
-            <form className='Auth-form'>
+            <form className='Auth-form' onSubmit={handleLogin}>
                 <div className='Auth-form-content'>
                     <div className='text-center'>
                         <Link to='/'>
@@ -21,6 +43,8 @@ const login = () => {
                             type='email'
                             className='form-control mt-1'
                             placeholder='Enter email'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
                     <div className='form-group mt-3'>
@@ -29,9 +53,18 @@ const login = () => {
                             type='password'
                             className='form-control mt-1'
                             placeholder='Enter password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
-                    <div className='d-grid gap-2 mt-3'>
+
+                    {showAlert && (
+                        <div className='alert alert-danger mt-3'>
+                            Email atau sandi salah. Silakan coba lagi.
+                        </div>
+                    )}
+
+                    <div className='login-sudmit'>
                         <button
                             type='submit'
                             className='btn btn-warning fw-bold text-white'
@@ -52,4 +85,4 @@ const login = () => {
     );
 };
 
-export default login;
+export default Login;

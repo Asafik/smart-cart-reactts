@@ -46,6 +46,29 @@ label {
     color: rgb(0, 0, 0);
 }
 
+.login-sudmit {
+    text-align: center; /* Mengatur teks ke tengah */
+    margin-top: 20px;
+}
+
+.login-sudmit button {
+    background-color: #ffa500; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    font-weight: bold; /* Tebalkan teks tombol */
+    padding: 10px 20px; /* Padding tombol */
+    border: none; /* Hapus border tombol */
+    cursor: pointer; /* Ganti kursor saat mengarahkan ke tombol */
+}
+
+.login-sudmit button a {
+    text-decoration: none; /* Menghapus garis bawah tautan dalam tombol */
+    color: white; /* Warna teks tautan dalam tombol */
+}
+
+.login-sudmit button:hover {
+    background-color: #ff8200; /* Warna latar belakang tombol saat digulirkan */
+}
+
 p.mt-2 > span {
     float: left; /* Agar teks "Belum punya akun?" berada di kiri */
 }
