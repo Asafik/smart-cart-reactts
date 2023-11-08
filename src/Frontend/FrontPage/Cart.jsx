@@ -48,7 +48,7 @@ const Cart = () => {
                 </Navbar>
             </div>
 
-            <div className='w-100 min-vh-100'>
+            <div className='cart-page w-100 min-vh-100'>
                 <div className='kerajang-saya'>
                     <span className='produk'>Produk</span>
                     <span className='harga-satuan'>Harga Satuan</span>

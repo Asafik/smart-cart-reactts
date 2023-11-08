@@ -32,12 +32,13 @@
     font-size: 15px;
 }
 
-.w-100.min-vh-100 {
+.cart-page{
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
+
 .kerajang-saya {
     position: absolute;
     left: 50%;
