@@ -1,0 +1,123 @@
+/* Styling for Notifikasi */
+.notifikasi-saya {
+    margin-top: 100px;
+}
+
+.notifikasi {
+    width: 120%; /* Lebar box */
+    padding: 40px; /* Ruang dalam box */
+    border: 1px solid #ccc; /* Garis tepi */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan */
+    background-color: #fff; /* Warna latar belakang */
+    margin: 20px auto; /* Pusatkan box secara horizontal */
+    margin-top: 15%;
+}
+
+.notifikasi h3 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffa506;
+}
+
+.notifikasi p {
+    color: #888;
+}
+
+.text-icons svg {
+    margin-right: 10px; /* Jarak antara ikon dan teks (sesuaikan dengan preferensi Anda) */
+}
+
+.notifikasi .text-icons {
+    margin-top: 12%;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+.notifikasi .text-icons span {
+    margin-left: 49%;
+    color: black;
+}
+
+.notifikasi .from-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.notifikasi .custom-switch-text {
+    font-weight: bold;
+    color: #333;
+}
+
+.info-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.notifikasi .info-icons span {
+    margin-left: 5px;
+    color: #555;
+}
+
+.custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.custom-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ffa506;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* To make the slider round */
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

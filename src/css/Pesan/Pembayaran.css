@@ -1,0 +1,46 @@
+/* pembayarn */
+
+.pembayaran {
+    margin-top: 50px;
+}
+
+.pembayaran-wallet {
+    display: flex;
+    justify-content: center;
+}
+
+.pembayaran-wallet img {
+    margin-right: 0;
+    border: 2px solid #ffa506;
+    padding: 10px;
+    flex: 0 0 100px;
+    width: 160px;
+    height: 100px;
+    margin: 10px;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pembayaran-bank {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.bank-image {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.bank-image img {
+    width: 150px; /* Lebar gambar */
+    height: auto; /* Biarkan tinggi mengikuti perubahan lebar */
+}
+
+.radio-button {
+    order: -1; /* Mengubah urutan radio button sebelum gambar */
+    margin-right: 5%; /* Jarak antara radio button dan gambar */
+}
+
+/* pembayarn */

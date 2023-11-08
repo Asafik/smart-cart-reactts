@@ -1,0 +1,240 @@
+/* CSS Untuk Tata Letak Halaman Home */
+
+.home h1 {
+    font-size: 3.5rem; /* Atur ukuran teks judul */
+    color: #333; /* Warna teks judul */
+    margin-bottom: 20px; /* Jarak bawah dari judul */
+}
+
+.home p {
+    font-size: 1.1rem; /* Atur ukuran teks paragraf */
+    color: #555; /* Warna teks paragraf */
+    margin-bottom: 30px; /* Jarak bawah dari paragraf */
+}
+
+.custom-link a {
+    display: inline-block;
+    padding: 10px 20px; /* Atur padding untuk link */
+    background-color: #ffc701; /* Warna latar belakang link */
+    color: #fff; /* Warna teks link */
+    text-decoration: none;
+    border-radius: 5px; /* Bentuk sudut border */
+    box-shadow: 5px 10px 2px #ffda56; /* Tambahkan bayangan dengan warna coklat */
+    font-weight: bold;
+}
+
+.custom-link a:hover {
+    background-color: #e0a800; /* Ganti warna latar belakang saat dihover jika diinginkan */
+    box-shadow: 5px 10px 2px #e0a800; /* Ganti bayangan saat dihover jika diinginkan */
+}
+
+.cart-box {
+    margin-left: 10px; /* Jarak dari ikon keranjang */
+    background-color: #d4a601;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+/* Responsive untuk gambar */
+.home img {
+    max-width: 100%; /* Gambar akan menyesuaikan lebar parent */
+    height: auto;
+}
+
+.product-selengkapnya {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.product-selengkapnya h1 {
+    color: #333;
+    font-size: 35px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.product-selengkapnya p {
+    color: #000000;
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000; /* Menambahkan garis di pinggirannya */
+    width: 12%;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-selengkapnya p svg {
+    margin-left: 5px; /* Atur jarak antara teks dan ikon */
+}
+
+.mySwiper {
+    width: 100%;
+    margin-top: -20%;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper-slider {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* Gaya untuk kotak (box) yang melingkupi gambar dan teks */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Posisikan elemen secara vertical ke atas */
+    align-items: flex-start; /* Posisikan elemen secara horizontal ke kiri */
+    width: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    margin-left: 130px;
+    border-radius: 10%;
+    padding-right: 30px;
+}
+
+/* Gaya untuk gambar dalam kotak */
+.box img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-left: 13px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.box h5 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    margin-left: 20px;
+}
+/* Gaya untuk teks dalam kotak */
+.box p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin: 0px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.cart-icons {
+    position: absolute;
+    top: 89%;
+    right: 30px; /* Adjust this value to control the distance from the right edge */
+    transform: translateY(-50%);
+    background-color: #ffa506;
+    padding: 5px;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.about-home {
+    width: 90%; /* Ganti ukuran sesuai keinginan Anda */
+    height: 500px; /* Ganti ukuran sesuai keinginan Anda */
+    background: linear-gradient(
+        to bottom,
+        #feb900,
+        #ffe500
+    ); /* Ganti warna gradien sesuai keinginan Anda */
+
+    border-radius: 40px; /* Opsi: tambahkan sudut melengkung sesuai keinginan Anda */
+
+    /* Menengahkan horizontal elemen */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10%;
+}
+
+.about-home h3 {
+    font-size: 40px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 10px; /* Sesuaikan jarak antara judul dan teks */
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.about-home p {
+    font-size: 20px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 20px; /* Sesuaikan jarak antara paragraf */
+    color: white;
+    text-align: justify;
+}
+
+.about-home img {
+    max-width: 100%; /* Gambar tidak melebihi lebar kotak */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+    display: block; /* Hilangkan spasi di bawah gambar */
+    margin: 0 auto; /* Tengahkan gambar horizontal */
+}
+
+.selengkapnya-link {
+    background-color: #6bee0d; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    display: inline-block;
+    padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 5px; /* Sudut melengkung */
+    text-decoration: none; /* Hapus garis bawah dari tautan */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+    font-weight: bold;
+}
+
+.selengkapnya-link:hover {
+    background-color: #2e12e3; /* Warna latar belakang saat dihover */
+}
+
+.chevron-right {
+    margin-left: 5px; /* Jarak antara teks dan ikon panah kanan */
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    margin-top: -20%;
+}
+
+.text-center h1 {
+    font-size: 30px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin: 0; /* Hapus margin bawaan */
+    background-color: #ffa506; /* Warna latar belakang */
+    padding: 10px; /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 40px;
+}
+
+.marketpeace {
+    display: flex;
+    justify-content: center; /* Mengatur agar konten berada di tengah horizontal */
+    align-items: center; /* Mengatur agar konten sejajar vertikal */
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk semua gambar dalam .marketpeace */
+.marketpeace .image {
+    width: 250px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin: 0 20px; /* Sesuaikan jarak antara gambar */
+}
+
+.marketpeace .tiktok {
+    width: 250px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin: 0 20px; /* Sesuaikan jarak antara gambar */
+    margin-top: 10px;
+}

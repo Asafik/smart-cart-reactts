@@ -1,0 +1,142 @@
+/* Navbar.css */
+.navbar-dashboard {
+    background-color: #fff; /* Warna latar belakang nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.left-icons-dashboard {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.right-icons-dashboard {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* Styling for individual icons */
+.iconss.FaEnvelope,
+.iconss.FaFlag,
+.iconss.FaBell {
+    margin-right: 30px;
+    color: #000000;
+}
+
+.right-icons-dashboard img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 20px;
+    margin-right: 0;
+    color: #000000;
+}
+
+.iconss.FaBars {
+    cursor: pointer;
+}
+
+.iconss.FaEnvelope {
+    cursor: pointer;
+}
+
+.iconss.FaBell {
+    cursor: pointer;
+}
+
+.iconss.FaFlag {
+    cursor: pointer;
+}
+
+/* Custom CSS for dropdown menu */
+.dropdown-menu a:hover {
+    background-color: #777269;
+    color: #fff;
+}
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -1px;
+    right: 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0px 5px;
+    font-size: 10px;
+}
+
+.green-badge {
+    background-color: #008900;
+}
+
+.blue-badge {
+    background-color: #0000ff;
+}
+
+.red-badge {
+    background-color: #ff0000;
+}
+
+/* Sidebar.css */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%; /* Sesuaikan tinggi dengan kebutuhan */
+    width: 280px; /* Lebar sidebar sesuaikan dengan kebutuhan */
+    background-color: #fff; /* Warna latar belakang sidebar */
+    padding: 20px;
+    overflow-y: auto; /* Tambahkan scroll jika kontennya lebih panjang daripada tinggi sidebar */
+    margin-top: 100px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antara setiap tautan menu */
+}
+
+/* Untuk membuat teks pada tautan menjadi tebal dalam keadaan normal */
+.dashboard-link,
+.list-produk-link,
+.tambah-produk-link,
+.perbarui-produk-link {
+    font-weight: bold; /* Menjadikan teks menjadi tebal (bold) */
+    color: #000000;
+}
+
+/* CSS untuk ikon */
+.dashboard-icon,
+.list-produk-icon,
+.tambah-produk-icon,
+.perbarui-produk-icon {
+    margin-right: 10px;
+    /* Atur properti ikon lainnya sesuai kebutuhan */
+}
+
+/* CSS untuk efek hover */
+.dashboard-link:hover,
+.list-produk-link:hover,
+.tambah-produk-link:hover,
+.perbarui-produk-link:hover {
+    background-color: #ffa506; /* Warna latar belakang saat tautan dihover */
+    border-radius: 5px; /* Radius sudut kotak */
+    color: #fff;
+}

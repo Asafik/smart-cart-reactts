@@ -1,0 +1,81 @@
+.koleksi {
+    margin-top: 100px;
+}
+
+.koleksi-saya {
+    margin-top: 20%;
+}
+
+.koleksi-saya h3 {
+    color: #ffa506;
+}
+
+/* koleksi */
+.accordion {
+    border: 1px solid #ddd; /* Menambahkan border agar akordeon terlihat lebih jelas */
+    border-radius: 4px; /* Mengatur sudut elemen agar terlihat lebih lembut */
+    overflow: hidden; /* Menghindari tampilan konten yang bocor di luar akordeon */
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2); /* Menambahkan box-shadow */
+    margin-bottom: 10px; /* Atur jarak antara akordeon jika ada lebih dari satu */
+    transition: box-shadow 0.3s ease; /* Animasi perubahan box-shadow */
+}
+
+/* CSS untuk akordeon terbuka */
+.accordion.open {
+    border: 1px solid #ddd; /* Menambahkan border agar akordeon terlihat lebih jelas */
+    border-radius: 4px; /* Mengatur sudut elemen agar terlihat lebih lembut */
+    overflow: hidden; /* Menghindari tampilan konten yang bocor di luar akordeon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan box-shadow */
+    margin-bottom: 10px; /* Atur jarak antara akordeon jika ada lebih dari satu */
+    transition: box-shadow 0.3s ease; /* Animasi perubahan box-shadow */
+}
+
+/* CSS untuk ikon panah bawah (chevron) */
+.chevron {
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+}
+
+/* CSS untuk akordeon terbuka */
+.accordion.open .chevron {
+    transform: rotate(180deg);
+}
+
+/* CSS untuk mengatur tata letak judul dan ikon */
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.accordion-header img {
+    max-width: 10%; /* Membuat gambar tidak melebihi lebar elemen parent */
+    height: auto; /* Menjaga rasio aspek gambar */
+    margin-left: 20px;
+    vertical-align: middle; /* Menjaga gambar berada di tengah vertikal */
+}
+
+.accordion .nama-detail-hewan {
+    font-weight: bold;
+}
+
+.accordion .kategori-hewan {
+    margin-top: -20px; /* Sesuaikan jarak sesuai kebutuhan Anda */
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+/* Card.css */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin: 10px;
+    height: 330px;
+    margin-left: 20%;
+    margin-top: 30%;
+}

@@ -1,0 +1,33 @@
+/* NavbarComponent.css */
+
+/* Navbar brand logo styling */
+.navbar-bg {
+    background-color: #fff; /* Ganti kode warna dengan yang diinginkan */
+}
+.navbar-brand img {
+    max-width: 140px; /* Sesuaikan ukuran logo */
+    height: auto;
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    color: #000000; /* Warna teks untuk link */
+    padding: 0.5rem 1rem; /* Padding untuk link */
+    text-align: center; /* Menengahkan teks */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px; /* Menambahkan jarak horizontal di antara setiap link */
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #ffa506; /* Warna latar belakang saat link aktif */
+    border-radius: 5px; /* Bentuk sudut border */
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffa506; /* Warna latar belakang saat link dihover */
+    transition: background-color 0.3s; /* Transisi smooth saat dihover */
+    color: #fff;
+    border-radius: 5px; /* Bentuk sudut border */
+}
