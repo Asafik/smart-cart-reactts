@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import './css/bahasa.css';
 
 const Bahasa = () => {
     return (

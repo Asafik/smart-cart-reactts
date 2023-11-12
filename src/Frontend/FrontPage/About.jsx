@@ -18,6 +18,8 @@ import {
     BsArrowUpRight,
 } from 'react-icons/bs';
 
+import './css/about.css';
+
 const About = () => {
     return (
         <>

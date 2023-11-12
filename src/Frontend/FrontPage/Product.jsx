@@ -1,5 +1,6 @@
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import './css/product.css';
 
 import { FaShoppingCart } from 'react-icons/fa';
 // / Import Swiper React components

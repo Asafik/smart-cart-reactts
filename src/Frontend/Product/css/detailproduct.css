@@ -34,28 +34,57 @@
     font-size: 24px;
 }
 
+.count-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.count-container {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
 .buy-now-button {
-    padding: 10px 20px;
+    padding: 7px 20px;
     background-color: #ff9900;
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
     cursor: pointer;
     margin-left: 10px;
 }
 
-.counter-button {
-    background: #f0f0f0;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
+.icons-cart-like {
+    display: flex; /* Membuat ikon-ikon berbaris */
+    margin-left: 10px;
 }
 
-.counter-value {
-    margin: 0 10px;
-    font-weight: bold;
+.to-cart,
+.my-like {
+    margin-right: 10px; /* Sesuaikan jarak antara ikon jika perlu */
 }
+
+.to-cart a,
+.my-like a {
+    text-decoration: none;
+    color: #ff9900;
+    border: 2px solid #ff9900;
+    font-size: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Atur lebar ikon dan border */
+    height: 40px; /* Atur tinggi ikon dan border */
+    transition:
+        color 0.3s,
+        border 0.3s; /* Animasi warna dan border saat dihover */
+}
+
+.my-like a:hover {
+    color: #555; /* Warna teks yang berbeda ketika dihover */
+}
+
+/* Gaya tambahan sesuai kebutuhan */
 
 /* Responsif */
 @media (max-width: 768px) {

@@ -1,0 +1,325 @@
+/* Navbar pemesanan */
+
+/* Logo */
+.navbar-pesan img {
+    width: 130px; /* Ukuran logo */
+    height: auto; /* Memastikan aspek rasio tetap terjaga */
+    margin-right: 20px;
+}
+
+/* Item check, info, line, number, selesai text */
+.check-container,
+.info-text,
+.number-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.info-text,
+.selesai-text {
+    font-weight: bold;
+}
+
+.line {
+    border-top: 2px solid #ff0000;
+    width: 100px;
+}
+
+/* Adjust image sizes */
+.check-container img,
+.number-container img {
+    width: 30px; /* Ukuran gambar */
+    height: 30px; /* Ukuran gambar */
+}
+
+/* Untuk ukuran layar desktop (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    .navbar-pesan img {
+        width: 100px; /* Ubah ukuran logo untuk desktop */
+        margin-right: 10px; /* Ubah margin logo untuk desktop */
+    }
+
+    .check-container,
+    .info-text,
+    .number-container {
+        margin-right: 10px; /* Ubah margin item untuk desktop */
+    }
+
+    .line {
+        width: 80px; /* Ubah panjang garis untuk desktop */
+    }
+
+    /* Ubah ukuran gambar pada container */
+    .check-container img,
+    .number-container img {
+        width: 20px; /* Ukuran gambar untuk desktop */
+        height: 20px; /* Ukuran gambar untuk desktop */
+    }
+}
+
+/* Untuk ukuran layar tablet (min-width: 767px) and (max-width: 1023px) */
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .navbar-pesan img {
+        width: 90px; /* Ukuran logo untuk tablet */
+        margin-right: 15px; /* Margin logo untuk tablet */
+    }
+
+    .check-container,
+    .info-text,
+    .number-container {
+        margin-right: 15px; /* Margin item untuk tablet */
+    }
+
+    .line {
+        width: 70px; /* Panjang garis untuk tablet */
+    }
+
+    /* Ukuran gambar pada container */
+    .check-container img,
+    .number-container img {
+        width: 25px; /* Ukuran gambar untuk tablet */
+        height: 25px; /* Ukuran gambar untuk tablet */
+    }
+}
+
+/* Untuk ukuran layar ponsel kecil (min-width: 420px) and (max-width: 767px) */
+@media only screen and (min-width: 420px) and (max-width: 767px) {
+    .navbar-pesan img {
+        width: 70px; /* Ukuran logo untuk ponsel kecil */
+        margin-right: 8px; /* Margin logo untuk ponsel kecil */
+    }
+
+    .check-container,
+    .info-text,
+    .number-container {
+        margin-right: 8px; /* Margin item untuk ponsel kecil */
+    }
+
+    .line {
+        width: 50px; /* Panjang garis untuk ponsel kecil */
+    }
+
+    /* Ukuran gambar pada container */
+    .check-container img,
+    .number-container img {
+        width: 18px; /* Ukuran gambar untuk ponsel kecil */
+        height: 18px; /* Ukuran gambar untuk ponsel kecil */
+    }
+}
+
+.pemesanan {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.pemesanan-detail {
+    width: 100%;
+    padding: 20px;
+
+    margin-bottom: 20px;
+    border: 2px solid #040404;
+    height: 500px; /* Tambahkan tinggi 400px atau sesuaikan kebutuhan Anda */
+}
+
+.pemesanan-detail h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.email-telepon,
+.inputan-nama,
+.provinsi-kota,
+.alamat-kodepos {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.email-telepon input,
+.inputan-nama input,
+.provinsi-kota input,
+.alamat-kodepos input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* CSS untuk mengatur lebar dropdown provinsi */
+#provinsi {
+    width: 30%; /* Ubah lebar sesuai kebutuhan */
+    padding: 8px; /* Atur padding untuk penampilan yang lebih baik */
+    font-size: 16px; /* Atur ukuran font */
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* CSS untuk menata tombol navigasi pada form pemesanan */
+.navigation-buttons-pemesanan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px; /* Atur jarak atas */
+}
+
+.navigation-buttons-pemesanan button {
+    padding: 10px 30px; /* Atur ukuran padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 300px; /* Atur lebar tombol */
+}
+
+.navigation-buttons-pemesanan .button-kembali {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 1px solid #040404;
+    /* Penyrgb(0, 0, 0)an gaya lainnya */
+}
+
+.navigation-buttons-pemesanan .button-lanjut {
+    background-color: #ffa506;
+    color: white;
+    /* Penyesuaian gaya lainnya */
+}
+
+.navigation-buttons-pemesanan .button-kembali:hover {
+    background-color: #ffa506;
+    color: white;
+    border: 1px solid #ffa506;
+}
+
+.navigation-buttons-pemesanan .button-lanjut:active {
+    background-color: #ff4006;
+}
+
+.pemesanan-total {
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border: 2px solid #040404;
+    margin: 0 20px 20px; /* Menambah margin atas menjadi 30px */
+}
+/* Style for the heading */
+.pemesanan-total h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for the total price section */
+.pemesanan-total-harga {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Style for the image */
+.pemesanan-total-harga img {
+    width: 100px; /* Adjust the size as needed */
+    height: 120px; /* Adjust the size as needed */
+    margin-right: 10px;
+}
+
+/* Style for the product name */
+.pemesanan-total-harga h2 {
+    font-size: 18px;
+    color: #555;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.pemesanan-total-harga p {
+    margin-top: 35px;
+    margin-left: -155px;
+    margin-bottom: 40px;
+}
+
+.pemesanan-total-harga .count-pemesanan {
+    position: relative;
+    right: 70px;
+    top: 35px;
+}
+
+.new-icons-cart-like {
+    display: flex; /* Membuat ikon-ikon berbaris */
+    margin-left: 10px;
+    position: relative;
+    right: 70px;
+    top: 35px;
+}
+
+.new-to-cart,
+.new-my-like {
+    margin-right: 10px; /* Sesuaikan jarak antara ikon jika perlu */
+}
+
+.new-to-cart a,
+.new-my-like a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    font-size: 17px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px; /* Atur lebar ikon dan border */
+    height: 25px; /* Atur tinggi ikon dan border */
+    transition:
+        color 0.3s,
+        border 0.3s; /* Animasi warna dan border saat dihover */
+}
+
+.new-my-like a:hover {
+    color: #ffa506; /* Warna teks yang berbeda ketika dihover */
+}
+
+/* CSS untuk menambahkan garis pada div subtotal */
+.pemesanan-total .sub-total-harga-container {
+    position: relative; /* Menetapkan posisi relatif untuk div container */
+}
+
+.pemesanan-total .sub-total-line {
+    position: absolute; /* Menetapkan posisi absolut untuk garis */
+    left: 0; /* Menetapkan posisi horizontal di awal container */
+    width: 111%; /* Mengatur panjang garis menjadi 100% dari lebar container */
+    border-top: 2px solid #040404; /* Menambah garis di bagian atas */
+    margin-left: -20px;
+}
+
+/* Style for the subtotal section */
+.pemesanan-total .sub-total-harga {
+    margin-top: 32%;
+    padding-top: 10px; /* Menambah padding di bagian atas untuk memberikan ruang antara garis dan kontennya */
+}
+
+.pemesanan-total .sub-total-harga p {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.p-line-pemesanan-total {
+    width: 111%; /* Panjang garis */
+    border-bottom: 2px solid #040404; /* Warna dan ketebalan garis */
+    margin: 10px 0; /* Jarak antara h2 dan garis */
+    margin-left: -20px;
+    margin-top: 13px;
+}

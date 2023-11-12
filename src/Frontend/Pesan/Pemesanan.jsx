@@ -1,14 +1,62 @@
 import { Navbar, Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import DaftarPropinsi from '../Components/DaftarPropinsi';
+import React, { useState } from 'react';
+import { AiFillHeart } from 'react-icons/ai';
+import { BiSolidTrashAlt} from 'react-icons/bi'
 
-import NavbarComponents from '../Components/FooterComponents';
 import FooterComponents from '../Components/FooterComponents';
+import Count from './Components/Count/Count';
+import './css/Pemesanan.css';
 
 const Pemesanan = () => {
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [nama, setNama] = useState('');
+    const [provinsi, setProvinsi] = useState('');
+    const [kota, setKota] = useState('');
+    const [kabupaten, setKabupaten] = useState('');
+    const [alamat, setAlamat] = useState('');
+    const [kodePos, setKodePos] = useState('');
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handlePhoneChange = (e) => {
+        setPhone(e.target.value);
+    };
+
+    const handleNamaChange = (e) => {
+        setNama(e.target.value);
+    };
+
+    const handleProvinsiChange = (e) => {
+        setProvinsi(e.target.value);
+    };
+
+    const handleKotaChange = (e) => {
+        setKota(e.target.value);
+    };
+
+    const handleKabupatenChange = (e) => {
+        setKabupaten(e.target.value);
+    };
+
+    const handleAlamatChange = (e) => {
+        setAlamat(e.target.value);
+    };
+
+    const handleKodePosChange = (e) => {
+        setKodePos(e.target.value);
+    };
+
+    const daftarPropinsi = DaftarPropinsi();
+
     return (
         <>
             <div className='navbar-pesan'>
-                <Navbar bg='light' expand='lg' className='mb-4'>
+                <Navbar bg='white' expand='lg' className='mb-4'>
                     <Container>
                         <Link to='/'>
                             <img
@@ -17,17 +65,14 @@ const Pemesanan = () => {
                                 alt='logoimage'
                             />
                         </Link>
-
                         <div className='check-container'>
                             <img src='assets/img/icon/check.png' alt='' />
                         </div>
-
                         <div className='info-text'>Informasi</div>
                         <div className='line'></div>
                         <div className='number-container'>
                             <img src='assets/img/icon/circle2.png' alt='' />
                         </div>
-
                         <div className='selesai-text'>Pembayaran</div>
                         <div className='line'></div>
                         <div className='number-container'>
@@ -40,87 +85,138 @@ const Pemesanan = () => {
 
             <Container className='pemesanan'>
                 <Row className='min-vh-100'>
-                    <Col xs={12} md={6}>
-                        <Form>
-                            <Form.Group controlId='nama'>
-                                <Form.Label>Nama</Form.Label>
-                                <Form.Control
-                                    type='text'
-                                    placeholder='Masukkan nama Anda'
-                                    style={{
-                                        borderWidth: '2px',
-                                        borderColor: 'black',
-                                    }} // Menambahkan garis tebal
-                                />
-                            </Form.Group>
-                            <Form.Group controlId='alamat'>
-                                <Form.Label>Alamat Pengiriman</Form.Label>
-                                <Form.Control
-                                    type='text'
-                                    placeholder='Masukkan alamat pengiriman Anda'
-                                    style={{
-                                        borderWidth: '2px',
-                                        borderColor: 'black',
-                                    }} // Menambahkan garis tebal
-                                />
-                            </Form.Group>
-                            <Form.Group controlId='email'>
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control
+                    <Col md={8}>
+                        <div className='pemesanan-detail'>
+                            <h2>Informasi Kontak</h2>
+                            <div className='h2-line'></div>
+                            <div className='email-telepon'>
+                                <input
                                     type='email'
-                                    placeholder='Masukkan email Anda'
-                                    style={{
-                                        borderWidth: '2px',
-                                        borderColor: 'black',
-                                    }} // Menambahkan garis tebal
+                                    id='email'
+                                    value={email}
+                                    onChange={handleEmailChange}
+                                    placeholder='Email'
                                 />
-                            </Form.Group>
-                            <Form.Group controlId='nomorTelepon'>
-                                <Form.Label>Nomor Telepon</Form.Label>
-                                <Form.Control
-                                    type='tel'
-                                    placeholder='Masukkan nomor telepon Anda'
-                                    style={{
-                                        borderWidth: '2px',
-                                        borderColor: 'black',
-                                    }} // Menambahkan garis tebal
+                                <input
+                                    type='text'
+                                    id='phone'
+                                    value={phone}
+                                    onChange={handlePhoneChange}
+                                    placeholder='Nomor Telepon'
                                 />
-                            </Form.Group>
-                        </Form>
+                            </div>
+
+                            <h2>Informasi Pengiriman</h2>
+                            <div className='inputan-nama'>
+                                <input
+                                    type='text'
+                                    id='nama'
+                                    value={nama}
+                                    onChange={handleNamaChange}
+                                    placeholder='Nama'
+                                />
+                            </div>
+                            <div className='provinsi-kota'>
+                                <select
+                                    id='provinsi'
+                                    value={provinsi}
+                                    onChange={handleProvinsiChange}
+                                >
+                                    <option value=''>Pilih Provinsi</option>
+                                    {daftarPropinsi.map((propinsi, index) => (
+                                        <option key={index} value={propinsi}>
+                                            {propinsi}
+                                        </option>
+                                    ))}
+                                </select>
+                                <input
+                                    type='text'
+                                    id='kabupaten'
+                                    value={kabupaten}
+                                    onChange={handleKabupatenChange}
+                                    placeholder='Kabupaten'
+                                />
+                                <input
+                                    type='text'
+                                    id='kota'
+                                    value={kota}
+                                    onChange={handleKotaChange}
+                                    placeholder='Kota'
+                                />
+                            </div>
+
+                            <div className='alamat-kodepos'>
+                                <input
+                                    type='text'
+                                    id='alamat'
+                                    value={alamat}
+                                    onChange={handleAlamatChange}
+                                    placeholder='Alamat'
+                                />
+                                <input
+                                    type='text'
+                                    id='kodePos'
+                                    value={kodePos}
+                                    onChange={handleKodePosChange}
+                                    placeholder='Kode Pos'
+                                />
+                            </div>
+                            <div className='navigation-buttons-pemesanan'>
+                                <Link to='/halaman-sebelumnya'>
+                                    <button className='button-kembali'>
+                                        Kembali
+                                    </button>
+                                </Link>
+                                <Link to='/pembayaran'>
+                                    <button className='button-lanjut'>
+                                        Lanjutkan Pembayaran
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
                     </Col>
-                    <Col xs={8} md={5}>
-                        <div className='card'>
-                            <div className='card-content'>
-                                <img
-                                    src='assets/img/Card/cat.png'
-                                    alt='Produk'
-                                />
-                                <div className='text-right'>
-                                    <h3>Animal Smart Card</h3>
-                                    <div className='price-container'>
-                                        <p>Rp. 30.000</p>
-                                        <p className='quantity'>X2</p>
+                    <Col md={4}>
+                        <div className='pemesanan-total'>
+                            <h2>Pemesanan</h2>
+                            <div className='h2-line-pembayaran-total'></div>
+                            <div className='pemesanan-total-harga'>
+                                <img src='assets/img/Card/cat.png' alt='' />
+                                <h2>Animal Smart Card</h2>
+                                <p>Rp. 30.000</p>
+                                <div className='count-pemesanan'>
+                                    <Count />
+                                </div>
+
+                                <div className='new-icons-cart-like'>
+                                    <div className='new-to-cart'>
+                                        <Link to='/new-cart'>
+                                           <AiFillHeart/>
+                                        </Link>
+                                    </div>
+
+                                    <div className='new-my-like'>
+                                        <Link to='/new-heart'>
+                                           <BiSolidTrashAlt/>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className='card-text'></div>
-                            <hr />
-                            <div className='total-harga '>
-                                <div className='harga-container'>
-                                    <p>Total Harga :</p>
-                                    <p className='harga-angka'>Rp. 60.000</p>
-                                </div>
-                            </div>
-                            <div className='button-container'>
-                                <div className='button-kembali'>
-                                    <Link to='/product'>
-                                        <Button>Kembali</Button>
-                                    </Link>
-                                </div>
-                                <div className='button-bayar'>
-                                    <Link to='/pembayaran'>
-                                        <Button>Bayar</Button>
-                                    </Link>
+                            <div className='sub-total-harga-container'>
+                                {' '}
+                                {/* Div baru */}
+                                <div className='sub-total-line'></div>{' '}
+                                {/* Garis */}
+                                <div className='sub-total-harga'>
+                                    <p>
+                                        Subtotal <span>Rp. 30.000</span>
+                                    </p>
+                                    <p>
+                                        Biaya Pengiriman <span>Rp. 15.000</span>
+                                    </p>
+                                    <div className='p-line-pemesanan-total'></div>
+                                    <p>
+                                        Total <span>Rp. 45.000</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>

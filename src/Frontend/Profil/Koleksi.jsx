@@ -5,6 +5,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import './css/koleksi.css';
 
 const Koleksi = () => {
     // Membuat state untuk mengelola status terbuka/tutup masing-masing akordeon

@@ -1,0 +1,121 @@
+.cara-pembayaran {
+    width: 100%; /* Sesuaikan dengan kebutuhan lebar */
+    max-width: 600px; /* Sesuaikan dengan kebutuhan lebar maksimal */
+    margin: 0 auto; /* Untuk membuat elemen berada di tengah */
+    padding: 20px;
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: auto; /* Sesuaikan dengan kebutuhan tinggi */
+    padding: 50px;
+    margin-bottom: 80px;
+}
+
+/* CSS untuk Chevron Icon dan Judul */
+.text-indent {
+    display: flex;
+    align-items: center;
+}
+
+.chevron-icon {
+    font-size: 24px;
+    margin-right: 20px;
+    background-color: whitesmoke;
+    width: 40px;
+    height: auto;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.text-indent h5 {
+    margin-top: 10px;
+}
+
+.cara-pembayaran hr {
+    border: none;
+    height: 3px; /* Ketebalan garis */
+    background-color: black; /* Warna garis */
+    margin: 15px 0; /* Jarak di atas dan di bawah garis */
+}
+
+/* CSS untuk Total Pembayaran dan Batas Waktu */
+.cara-pembayaran-bank {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.total-bayar-text {
+    font-size: 14px;
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.right-align .text-total-bayar {
+    color: #ffa506;
+    font-weight: bold;
+}
+
+.tempo {
+    font-size: 12px;
+    color: #666666;
+    margin-top: -10px;
+}
+
+/* CSS untuk Nomor Rekening */
+.no-rekening {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    margin-top: 50px;
+}
+
+.no-rekening img {
+    width: 50px; /* Sesuaikan ukuran gambar */
+    margin-right: 10px;
+}
+
+.no-rekening p {
+    margin: 0; /* Menghapus margin bawaan yang mungkin ada */
+    margin-left: 10px;
+    font-weight: bold;
+}
+.no-rekening span {
+    color: black;
+    margin-left: 10px;
+}
+
+.petunjuk-bayar-bni {
+    margin-left: 55px;
+    /* atau menggunakan margin-right: nilaipx; */
+}
+
+.button-ok {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button-ok .OK {
+    display: inline-block;
+    width: 200px;
+    padding: 10px; /* Atur padding sesuai kebutuhan Anda */
+    background-color: #ffa506; /* Atur warna latar belakang sesuai kebutuhan Anda */
+    color: #fff; /* Atur warna teks sesuai kebutuhan Anda */
+    text-decoration: none;
+    border-radius: 5px; /* Atur sudut border sesuai kebutuhan Anda */
+    font-weight: bold;
+}
+
+.button-ok .OK:hover {
+    background-color: rgb(
+        255,
+        110,
+        6
+    ); /* Atur warna latar belakang hover sesuai kebutuhan Anda */
+}

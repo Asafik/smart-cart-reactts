@@ -1,21 +1,12 @@
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import Count from '../Components/Count/Count';
+import './css/detailproduct.css';
 
-import { FaPlus, FaMinus } from 'react-icons/fa';
-import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
 
 const DetailProduct = () => {
-    const [count, setCount] = useState(0);
-    const increment = () => {
-        setCount(count + 1);
-    };
-
-    const decrement = () => {
-        if (count > 0) {
-            setCount(count - 1);
-        }
-    };
-
     return (
         <>
             <NavbarComponents />
@@ -37,7 +28,11 @@ const DetailProduct = () => {
                             <span className='star'>&#9733;</span>
                             <span className='star'>&#9733;</span>
                             <span className='star'>&#9733;</span>
-                            <span>100 Ulasan</span>
+                            <span
+                                style={{ marginLeft: '10px', marginTop: '2px' }}
+                            >
+                                100 Ulasan
+                            </span>
                         </div>
                         <h2 className='fw-bold'>Harga: Rp. 30.000</h2>
                         <p>
@@ -47,30 +42,31 @@ const DetailProduct = () => {
                             Augmented Reality.
                         </p>
                         <div>
-                            <div>
-                                <button
-                                    className='counter-button'
-                                    onClick={decrement}
-                                >
-                                    <FaMinus />
-                                </button>
-                                <span className='counter-value'>{count}</span>
-                                <button
-                                    className='counter-button'
-                                    onClick={increment}
-                                >
-                                    <FaPlus />
-                                </button>
+                            <div className='count-container'>
+                                <Count />
                                 <button className='buy-now-button'>
-                                    Beli Sekarang
+                                    <Link to='/beli-sekarang'>
+                                        Beli Sekarang
+                                    </Link>
                                 </button>
-                                <div>
-                                    <br />
-                                    <p>
-                                        Pembelian Dalam Bentuk Pack Bukan Satuan
-                                    </p>
+
+                                <div className='icons-cart-like'>
+                                    <div className='to-cart'>
+                                        <Link to='/cart'>
+                                            <AiOutlineShoppingCart />
+                                        </Link>
+                                    </div>
+
+                                    <div className='my-like'>
+                                        <Link to='/heart'>
+                                            <AiOutlineHeart />
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
+                            <p style={{ marginTop: '10px' }}>
+                                Pembelian Dalam Bentuk Pack Bukan Satuan
+                            </p>
                         </div>
                     </div>
                 </div>

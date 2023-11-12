@@ -1,6 +1,4 @@
-
 /* cart */
-
 
 .navbar-cart .line-vertikal {
     border-left: 2px solid #000000;
@@ -18,7 +16,7 @@
     display: inline-block; /* Menggunakan inline-block untuk sejajarkan horizontal */
     font-size: 24px; /* Ukuran ikon */
     margin-right: 10px; /* Jarak antara ikon dan ikon berikutnya */
-    background-color: #ffa506;
+    background-color: #ffc701;
     padding: 8px;
     border-radius: 50%;
     width: 40px;
@@ -32,7 +30,7 @@
     font-size: 15px;
 }
 
-.cart-page{
+.cart-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,10 +62,10 @@
 }
 
 .aksi {
-    margin-right: 90px;
+    margin-right: 100px;
 }
 .total-harga {
-    margin-top: -5px;
+    margin-top: 0px;
 }
 
 .keranjang-saya-detail {
@@ -79,7 +77,6 @@
     background-color: white;
     width: 85%;
     margin-top: 10%;
-    
 }
 
 .keranjang-saya-detail img {
@@ -95,76 +92,85 @@
 }
 
 .harga-detail {
-    margin-left: 200px;
-    color: #ffa506;
+    font-size: 18px;
+    color: #333;
+    margin-left: 180px;
+    color: #ffc701;
     font-weight: bold;
 }
 
+.kuintitas-detail {
+    margin-left: 85px;
+}
 .total-detail {
-    margin-left: 260px;
+    font-size: 18px;
+    color: #ffc701;
+
+    margin-left: 55px;
     font-weight: bold;
-    color: #ffa506;
 }
 
 .hapus-detail {
-    margin-left: 100px;
+    color: #ffc701; /* Warna merah untuk menunjukkan tindakan menghapus */
+    cursor: pointer; /* Menunjukkan bahwa elemen dapat diklik */
     font-weight: bold;
-    color: #ffa506;
-    cursor: pointer;
+    margin-left: 70px;
+    /* Gaya tambahan sesuai kebutuhan */
+    padding: 5px 10px; /* Atur padding tombol sesuai kebutuhan */
+}
+
+.hapus-detail:hover {
+    padding: 5px 10px; /* Atur padding tombol sesuai kebutuhan */
+    background-color: #ffb406;
+    text-decoration: none;
+    color: #ffffff; /* Atur warna teks sesuai kebutuhan */
+    border-radius: 5px; /* Atur sudut border sesuai kebutuhan */
 }
 
 .detail-bayar-kembali {
     margin-top: 20px; /* Atur jarak dari atas sesuai kebutuhan */
     font-weight: bold;
     margin-right: 79%;
-  }
-
+}
 
 .detail-bayar-kembali a {
-  padding: 5px 10px; /* Padding tombol, sesuaikan kebutuhan */
-  border: 1px solid #000; /* Warna border, sesuaikan kebutuhan */
-  text-decoration: none;
-  color: #000; /* Warna teks, sesuaikan kebutuhan */
-  border-radius: 5px; /* Sudut border, sesuaikan kebutuhan */
+    padding: 5px 10px; /* Padding tombol, sesuaikan kebutuhan */
+    border: 1px solid #000; /* Warna border, sesuaikan kebutuhan */
+    text-decoration: none;
+    color: #000; /* Warna teks, sesuaikan kebutuhan */
+    border-radius: 5px; /* Sudut border, sesuaikan kebutuhan */
 }
 
 .detail-bayar-kembali a:hover {
-  background-color: #000; /* Warna latar belakang saat dihover, sesuaikan kebutuhan */
-  color: #fff; /* Warna teks saat dihover, sesuaikan kebutuhan */
+    background-color: #000; /* Warna latar belakang saat dihover, sesuaikan kebutuhan */
+    color: #fff; /* Warna teks saat dihover, sesuaikan kebutuhan */
 }
-
 
 .detail-bayar {
     font-weight: bold;
     margin-top: -20px;
     margin-left: 72%;
-  }
-  
-  .detail-bayar p {
+}
+
+.detail-bayar p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .detail-bayar a {
+}
+
+.detail-bayar a {
     padding: 5px 10px; /* Atur padding tombol sesuai kebutuhan */
-  background-color: #ffa506;
+    background-color: #ffa506;
     text-decoration: none;
     color: #ffffff; /* Atur warna teks sesuai kebutuhan */
     border-radius: 5px; /* Atur sudut border sesuai kebutuhan */
     margin-left: 10px;
-  }
-  
-  .detail-bayar a:hover {
+}
+
+.detail-bayar a:hover {
     background-color: #c96666; /* Atur warna latar belakang saat dihover sesuai kebutuhan */
     color: #fff; /* Atur warna teks saat dihover sesuai kebutuhan */
-  }
-  
-  
-
-  
-
-
+}
 
 /* Hapus gaya default dari checkbox */
 input[type='checkbox'] {

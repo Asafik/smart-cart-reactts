@@ -1,0 +1,82 @@
+/* selesai */
+.check-mark {
+    border: 2px solid #ccc; /* Atur border dan warna sesuai preferensi Anda */
+    padding: 20px; /* Tambahkan padding untuk menjaga jarak antara konten dan border */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 550px; /* Lebar kotak */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+
+.check-mark img {
+    max-width: 70px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.button-belanja {
+    display: flex;
+    justify-content: center; /* Menyusun elemen secara horizontal ke tengah */
+    align-items: center; /* Menyusun elemen secara vertikal ke tengah */
+    background-color: transparent; /* Mengatur latar belakang warna abu-abu (contoh) */
+    margin-top: 100px;
+}
+
+.belaja-kembali {
+    padding: 10px 60px;
+    background-color: #ffa506;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* selesai */
+
+/* Untuk ukuran layar desktop (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    .check-mark {
+        width: 80%; /* Mengubah lebar kotak menjadi 80% dari lebar layar */
+    }
+    .button-belanja {
+        margin-top: 80px; /* Ubah margin top tombol belanja */
+    }
+}
+
+/* Untuk ukuran layar tablet (min-width: 767px) and (max-width: 1023px) */
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .check-mark {
+        width: 90%; /* Mengubah lebar kotak menjadi 90% dari lebar layar */
+        margin-top: 20px; /* Ubah margin top kotak */
+        margin-bottom: 100px; /* Ubah margin bottom kotak */
+    }
+    .check-mark img {
+        max-width: 50px; /* Ubah ukuran gambar */
+        margin-bottom: 20px; /* Ubah margin bottom gambar */
+        margin-top: 40px; /* Ubah margin top gambar */
+    }
+    .button-belanja {
+        margin-top: 60px; /* Ubah margin top tombol belanja */
+    }
+}
+
+/* Untuk ukuran layar ponsel (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .check-mark {
+        width: 95%; /* Mengubah lebar kotak menjadi 95% dari lebar layar */
+        margin-top: 10px; /* Ubah margin top kotak */
+        margin-bottom: 70px; /* Ubah margin bottom kotak */
+    }
+    .check-mark img {
+        max-width: 40px; /* Ubah ukuran gambar */
+        margin-bottom: 15px; /* Ubah margin bottom gambar */
+        margin-top: 30px; /* Ubah margin top gambar */
+    }
+    .button-belanja {
+        margin-top: 40px; /* Ubah margin top tombol belanja */
+    }
+}

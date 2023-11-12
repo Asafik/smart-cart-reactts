@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FaPhone, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
+import './css/footer.css';
+
 const FooterComponents = () => {
     return (
         <div className='footer'>

@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { Navbar, Container, Form } from 'react-bootstrap';
+import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { AiFillHeart } from 'react-icons/ai';
+import { BiSolidTrashAlt} from 'react-icons/bi'
+
 
 import FooterComponents from '../Components/FooterComponents';
+import Count from './Components/Count/Count'
+import './css/Pembayaran.css';
 
 const Pembayaran = () => {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -14,7 +19,7 @@ const Pembayaran = () => {
     return (
         <>
             <div className='navbar-pesan'>
-                <Navbar bg='light' expand='lg' className='mb-4'>
+                <Navbar bg='white' expand='lg' className='mb-4'>
                     <Container>
                         <Link to='/'>
                             <img
@@ -43,75 +48,150 @@ const Pembayaran = () => {
                     </Container>
                 </Navbar>
             </div>
-            <div className='pembayaran min-vh-100'>
-                <div className='pembayaran-wallet'>
-                    <img
-                        className='shopeepay'
-                        src='assets/img/Pembayaran/shopeepay.png'
-                        alt='ShopeePay'
-                    />
-                    <img
-                        className='gopay'
-                        src='assets/img/Pembayaran/gopay.png'
-                        alt='GoPay'
-                    />
-                    <img
-                        className='dana'
-                        src='assets/img/Pembayaran/dana.png'
-                        alt='Dana'
-                    />
-                    <img
-                        className='banktf'
-                        src='assets/img/Pembayaran/banktf.png'
-                        alt='Bank Transfer'
-                    />
-                </div>
-                <div className='pembayaran-bank'>
-                    {[
-                        {
-                            className: 'bri',
-                            src: 'assets/img/Pembayaran/bri.png',
-                            alt: 'BRI',
-                        },
-                        {
-                            className: 'bni',
-                            src: 'assets/img/Pembayaran/bni.png',
-                            alt: 'BNI',
-                        },
-                        {
-                            className: 'bca',
-                            src: 'assets/img/Pembayaran/bca.png',
-                            alt: 'BCA',
-                        },
-                        {
-                            className: 'mandiri',
-                            src: 'assets/img/Pembayaran/mandiri.png',
-                            alt: 'Mandiri',
-                        },
-                        {
-                            className: 'permata',
-                            src: 'assets/img/Pembayaran/permata.png',
-                            alt: 'Permata',
-                        },
-                    ].map((item, index) => (
-                        <div key={index} className='bank-image'>
-                            <img
-                                className={item.className}
-                                src={item.src}
-                                alt={item.alt}
-                            />
-                            <Form.Check
-                                type='radio'
-                                className='radio-button'
-                                checked={selectedOption === item.className}
-                                onChange={() =>
-                                    handleRadioChange(item.className)
-                                }
-                            />
+            <Container>
+                <Row className='min-vh-100'>
+                    <Col md={8}>
+                        <div className='pembayaran'>
+                            <h2>Metode Pembayaran</h2>
+                            <div className='h2-line'></div>
+                            <div className='pembayaran-wallet'>
+                                <img
+                                    src='assets/img/Pembayaran/shopeepay.png'
+                                    alt=''
+                                />
+                                <img
+                                    src='assets/img/Pembayaran/gopay.png'
+                                    alt=''
+                                />
+                                <img
+                                    src='assets/img/Pembayaran/dana.png'
+                                    alt=''
+                                />
+                                <img
+                                    src='assets/img/Pembayaran/banktf.png'
+                                    alt=''
+                                />
+                            </div>
+
+                            <div className='pembayaran-bank'>
+                                <div class='pembayaran-bank-item'>
+                                    <input type='radio' id='bri' name='bank' />
+                                    <label for='bri'>
+                                        <img
+                                            src='assets/img/Pembayaran/bri.png'
+                                            alt='BRI'
+                                        />
+                                    </label>
+                                </div>
+                                <div class='pembayaran-bank-item'>
+                                    <input type='radio' id='bni' name='bank' />
+                                    <label for='bni'>
+                                        <img
+                                            src='assets/img/Pembayaran/bni.png'
+                                            alt='BNI'
+                                        />
+                                    </label>
+                                </div>
+                                <div class='pembayaran-bank-item'>
+                                    <input type='radio' id='bca' name='bank' />
+                                    <label for='bca'>
+                                        <img
+                                            src='assets/img/Pembayaran/bca.png'
+                                            alt='BCA'
+                                        />
+                                    </label>
+                                </div>
+                                <div class='pembayaran-bank-item'>
+                                    <input
+                                        type='radio'
+                                        id='mandiri'
+                                        name='bank'
+                                    />
+                                    <label for='mandiri'>
+                                        <img
+                                            src='assets/img/Pembayaran/mandiri.png'
+                                            alt='Mandiri'
+                                        />
+                                    </label>
+                                </div>
+                                <div class='pembayaran-bank-item'>
+                                    <input
+                                        type='radio'
+                                        id='permata'
+                                        name='bank'
+                                    />
+                                    <label for='permata'>
+                                        <img
+                                            src='assets/img/Pembayaran/permata.png'
+                                            alt='Permata'
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                            <div className='navigation-buttons-pembayaran'>
+                                <Link to='/halaman-sebelumnya'>
+                                    <button className='button-kembali'>
+                                        Kembali
+                                    </button>
+                                </Link>
+                                <Link to='/cara-bayar'>
+                                    <button className='button-lanjut'>
+                                        Bayar Sekarang
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
-                    ))}
-                </div>
-            </div>
+                    </Col>
+                    <Col md={4}>
+                        <div className='pembayaran-total'>
+                            <h2>Pemesanan</h2>
+                            <div className='h2-line-pembayaran-total'></div>
+                            <div className='pembayaran-total-harga'>
+                                <img src='assets/img/Card/cat.png' alt='' />
+                                <h2>Animal Smart Card</h2>
+                                <p>Rp. 30.000</p>
+                                <div className='count-pembayaran'>
+                                    <Count />
+                                </div>
+
+                                <div className='custom-icons-cart-like'>
+    <div className='custom-to-cart'>
+        <Link to='/custom-cart'>
+            <AiFillHeart />
+        </Link>
+    </div>
+
+    <div className='custom-my-like'>
+        <Link to='/custom-heart'>
+            <BiSolidTrashAlt />
+        </Link>
+    </div>
+</div>
+
+                            </div>
+                            <div className='sub-total-harga-container'>
+                                {' '}
+                                {/* Div baru */}
+                                <div className='sub-total-line'></div>{' '}
+                                {/* Garis */}
+                                <div className='sub-total-harga'>
+                                    <p>
+                                        Subtotal <span>Rp. 30.000</span>
+                                    </p>
+                                    <p>
+                                        Biaya Pengiriman <span>Rp. 15.000</span>
+                                    </p>
+
+                                    <div className='p-line-pembayaran-total'></div>
+                                    <p>
+                                        Total <span>Rp. 45.000</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
             <FooterComponents />
         </>
     );

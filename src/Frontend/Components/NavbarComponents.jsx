@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
+import './css/navbar.css';
 
 const NavbarComponents = () => {
     // useLocation dari react-router-dom digunakan untuk mendapatkan lokasi saat ini dari aplikasi

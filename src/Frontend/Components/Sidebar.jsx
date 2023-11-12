@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/sidebar.css';
 import { FaBars, FaHome, FaList, FaPlus, FaEdit } from 'react-icons/fa';
 import {
     FaEnvelope,

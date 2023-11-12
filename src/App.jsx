@@ -25,8 +25,6 @@ import {
     Update,
 } from './Frontend';
 
-import './css/index.css';
-
 function App() {
     return (
         <>
@@ -49,10 +47,10 @@ function App() {
                     <Route path='/logout' Component={Logout} />
                     <Route path='/login' Component={Login} />
                     <Route path='/register' Component={Register} />
-                    <Route path='/dashboard' Component={Dashboard}/>
-                    <Route path='/list-produk' Component={Listproduct}/>
-                    <Route path='/produk-baru' Component={AddProduct}/>
-                    <Route path='/update-produk' Component={Update}/>
+                    <Route path='/dashboard' Component={Dashboard} />
+                    <Route path='/list-produk' Component={Listproduct} />
+                    <Route path='/produk-baru' Component={AddProduct} />
+                    <Route path='/update-produk' Component={Update} />
                 </Routes>
             </Router>
         </>

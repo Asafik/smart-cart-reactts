@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import './css/notifikasi.css';
 
 const Notifikasi = () => {
     const [switches, setSwitches] = useState({
@@ -87,6 +88,7 @@ const Notifikasi = () => {
                                     <span className='slider round'></span>
                                 </label>
                             </div>
+
                             <div className='from-position'>
                                 <span className='custom-switch-text'>
                                     Pesanan Diproses
@@ -96,12 +98,13 @@ const Notifikasi = () => {
                                         type='checkbox'
                                         checked={switches.switch3}
                                         onChange={() =>
-                                            handleSwitchChange('switch2')
+                                            handleSwitchChange('switch3')
                                         }
                                     />
                                     <span className='slider round'></span>
                                 </label>
                             </div>
+
                             <div className='from-position'>
                                 <span className='custom-switch-text'>
                                     Pesanan Dikirim
@@ -111,7 +114,7 @@ const Notifikasi = () => {
                                         type='checkbox'
                                         checked={switches.switch4}
                                         onChange={() =>
-                                            handleSwitchChange('switch2')
+                                            handleSwitchChange('switch4')
                                         }
                                     />
                                     <span className='slider round'></span>
@@ -127,7 +130,7 @@ const Notifikasi = () => {
                                         type='checkbox'
                                         checked={switches.switch5}
                                         onChange={() =>
-                                            handleSwitchChange('switch2')
+                                            handleSwitchChange('switch5')
                                         }
                                     />
                                     <span className='slider round'></span>
@@ -148,7 +151,7 @@ const Notifikasi = () => {
                                         type='checkbox'
                                         checked={switches.switch6}
                                         onChange={() =>
-                                            handleSwitchChange('switch3')
+                                            handleSwitchChange('switch6')
                                         }
                                     />
                                     <span className='slider round'></span>

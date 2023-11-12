@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import './css/Cekstatus.css';
 
 const Cekstatus = () => {
     return (
@@ -105,6 +106,7 @@ const Cekstatus = () => {
                     </div>
                 </Row>
             </Container>
+            <FooterComponents />
         </>
     );
 };

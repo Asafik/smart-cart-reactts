@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import './css/informasi.css';
 
 function Informasi() {
     // State untuk menyimpan URL foto profil

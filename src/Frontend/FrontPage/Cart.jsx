@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { FaUser, FaShoppingCart } from 'react-icons/fa';
 import React, { useState } from 'react';
 
-import FooterComponents from '../Components/FooterComponents'
+import Count from './Components/Count/Count';
+
+import FooterComponents from '../Components/FooterComponents';
+import './css/cart.css';
 
 const Cart = () => {
     const [isChecked, setIsChecked] = useState(false);
@@ -15,7 +18,7 @@ const Cart = () => {
     return (
         <>
             <div className='navbar-cart'>
-            <Navbar bg='white' expand='lg' className='mb-4'>
+                <Navbar bg='white' expand='lg' className='mb-4'>
                     <Container>
                         <Link to='/'>
                             <img
@@ -57,27 +60,29 @@ const Cart = () => {
                     <span className='aksi'>Aksi</span>
                 </div>
                 <div className='keranjang-saya-detail'>
-                     {/* Menggunakan checkbox sebagai alternatif */}
-                <label className='checkbox-container'>
-                    <input
-                        type='checkbox'
-                        checked={isChecked}
-                        onChange={handleCheckboxChange}
-                    />
-                    <span className='checkmark'></span>
-                </label>
+                    {/* Menggunakan checkbox sebagai alternatif */}
+                    <label className='checkbox-container'>
+                        <input
+                            type='checkbox'
+                            checked={isChecked}
+                            onChange={handleCheckboxChange}
+                        />
+                        <span className='checkmark'></span>
+                    </label>
                     <img src='assets/img/Card/cat.png' alt='' />
                     <h2>Animal Smart Card</h2>
                     <p className='harga-detail'>Rp. 30.000</p>
+                    <p className='kuintitas-detail'>
+                        {' '}
+                        <Count />
+                    </p>
                     <p className='total-detail'>Rp. 60.000</p>
                     <p className='hapus-detail'>Hapus</p>
                 </div>
-                
-                
-<div className='detail-bayar-kembali'>
-            <Link to='/halaman-sebelumnya'>Kembali</Link>
-</div>
 
+                <div className='detail-bayar-kembali'>
+                    <Link to='/halaman-sebelumnya'>Kembali</Link>
+                </div>
 
                 <div className='detail-bayar'>
                     <p>

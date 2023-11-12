@@ -2,12 +2,13 @@ import { Navbar, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import FooterComponents from '../Components/FooterComponents';
+import './css/selesai.css';
 
 const Selesai = () => {
     return (
         <>
             <div className='navbar-pesan'>
-                <Navbar bg='light' expand='lg' className='mb-4'>
+                <Navbar expand='lg' className='mb-4'>
                     <Container>
                         <Link to='/'>
                             <img

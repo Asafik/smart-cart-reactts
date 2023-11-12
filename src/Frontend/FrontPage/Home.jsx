@@ -1,5 +1,6 @@
 import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
+import './css/home.css';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
