@@ -2,7 +2,7 @@ import NavbarComponents from '../Components/NavbarComponents';
 import FooterComponents from '../Components/FooterComponents';
 import './css/product.css';
 
-import { FaShoppingCart } from 'react-icons/fa';
+import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
 // / Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -45,64 +45,34 @@ const Product = () => {
                             },
                         }}
                         modules={[Pagination]}
-                        className='mySwiper'
+                        className='product-mySwiper'
                     >
                         <SwiperSlide>
-                            <div className='swiper-slider'>
-                                <div className='box'>
+                            <div className='product-swiper-slider'>
+                                <div className='product-box'>
                                     <img
                                         src='assets/img/Card/animal.png'
                                         alt=''
                                     />
                                     <h5>Seri Animal</h5>
                                     <p>Terdiri Dari 24 kartu Binatang </p>
-                                    <div className='cart-icons'>
-                                        <FaShoppingCart />
+                                    <div className='product-cart-icons'>
+                                        <AiOutlineShoppingCart />
                                     </div>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='swiper-slider'>
-                                <div className='box'>
-                                    <img
-                                        src='assets/img/Card/vegetables.png'
-                                        alt=''
-                                    />
-                                    <h5>Seri Sayuran</h5>
-                                    <p>Terdiri Dari 24 kartu Sayuran </p>
-                                    <div className='cart-icons'>
-                                        <FaShoppingCart />
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='swiper-slider'>
-                                <div className='box'>
-                                    <img
-                                        src='assets/img/Card/vegetables.png'
-                                        alt=''
-                                    />
-                                    <h5>Seri Sayuran</h5>
-                                    <p>Terdiri Dari 24 kartu Sayuran </p>
-                                    <div className='cart-icons'>
-                                        <FaShoppingCart />
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='swiper-slider'>
-                                <div className='box'>
+                            <div className='product-swiper-slider'>
+                                <div className='product-box'>
                                     <img
                                         src='assets/img/Card/animal.png'
                                         alt=''
                                     />
                                     <h5>Seri Animal</h5>
                                     <p>Terdiri Dari 24 kartu Binatang </p>
-                                    <div className='cart-icons'>
-                                        <FaShoppingCart />
+                                    <div className='product-cart-icons'>
+                                        <AiOutlineShoppingCart />
                                     </div>
                                 </div>
                             </div>

@@ -189,7 +189,7 @@
 }
 
 .about-four {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .about-four .ulasan {
@@ -224,4 +224,9 @@
     margin-left: 20px;
     margin-top: -10px;
     font-size: 18px;
+}
+
+.ulasan-pelanggan {
+    margin-top: 25%;
+    margin-bottom: 50px;
 }

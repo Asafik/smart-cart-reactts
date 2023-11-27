@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';
+import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
+
 // / Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -85,7 +87,7 @@ const Home = () => {
                                 <h5>Seri Animal</h5>
                                 <p>Terdiri Dari 24 kartu Binatang </p>
                                 <div className='cart-icons'>
-                                    <FaShoppingCart />
+                                    <AiOutlineShoppingCart />
                                 </div>
                             </div>
                         </div>
@@ -100,7 +102,7 @@ const Home = () => {
                                 <h5>Seri Sayuran</h5>
                                 <p>Terdiri Dari 24 kartu Sayuran </p>
                                 <div className='cart-icons'>
-                                    <FaShoppingCart />
+                                    <AiOutlineShoppingCart />
                                 </div>
                             </div>
                         </div>
@@ -115,7 +117,7 @@ const Home = () => {
                                 <h5>Seri Sayuran</h5>
                                 <p>Terdiri Dari 24 kartu Sayuran </p>
                                 <div className='cart-icons'>
-                                    <FaShoppingCart />
+                                    <AiOutlineShoppingCart />
                                 </div>
                             </div>
                         </div>
@@ -127,7 +129,7 @@ const Home = () => {
                                 <h5>Seri Animal</h5>
                                 <p>Terdiri Dari 24 kartu Binatang </p>
                                 <div className='cart-icons'>
-                                    <FaShoppingCart />
+                                    <AiOutlineShoppingCart />
                                 </div>
                             </div>
                         </div>

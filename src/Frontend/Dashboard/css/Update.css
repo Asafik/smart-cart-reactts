@@ -1,0 +1,47 @@
+.update-product {
+    background-color: whitesmoke;
+    height: 150vh; /* Untuk mengisi seluruh tinggi layar */
+}
+
+.update-product-detail {
+    width: 75%; /* lebar elemen */
+    height: 550px; /* tinggi elemen */
+    background-color: #ffffff; /* warna putih */
+    box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.1); /* efek bayangan dengan warna hitam transparan dan ketebalan 10px */
+    /* tambahkan properti lain sesuai kebutuhan */
+    margin-left: 20%;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.update-product-detail h5 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Tambahkan gaya ini di file CSS Anda */
+.custom-nav-link.active {
+    border-bottom: 3px solid #ffa506; /* Ganti garis bawah dengan border saat aktif */
+    color: #ffa506;
+}
+
+.custom-nav-link {
+    position: relative;
+    font-weight: bold;
+    color: black;
+}
+
+.custom-nav-link:hover {
+    color: #ffa506;
+}
+
+.custom-nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 900px;
+    height: 1px; /* Ketebalan garis */
+    background-color: #bababa; /* Warna garis */
+}

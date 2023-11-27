@@ -1,0 +1,35 @@
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-compponent .mySwiper {
+    width: 60%;
+    height: 300px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+}
+
+.content-container {
+    padding: 10px;
+    width: 160px;
+    height: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.content-container p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.content-container img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.ulasan-customer {
+    font-weight: bold;
+}

@@ -23,6 +23,7 @@ import {
     Listproduct,
     AddProduct,
     Update,
+    EditProfil,
 } from './Frontend';
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
                     <Route path='/list-produk' Component={Listproduct} />
                     <Route path='/produk-baru' Component={AddProduct} />
                     <Route path='/update-produk' Component={Update} />
+                    <Route path='/edit-profile' Component={EditProfil} />
                 </Routes>
             </Router>
         </>

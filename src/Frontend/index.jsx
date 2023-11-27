@@ -26,6 +26,7 @@ import Dashboard from './Dashboard/Dashboard';
 import Listproduct from './Dashboard/Listproduct';
 import AddProduct from './Dashboard/AddProduct';
 import Update from './Dashboard/Update';
+import EditProfil from './Dashboard/EditProfil';
 
 export {
     Home,
@@ -49,4 +50,5 @@ export {
     Listproduct,
     AddProduct,
     Update,
+    EditProfil,
 };

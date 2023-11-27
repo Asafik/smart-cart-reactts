@@ -1,16 +1,18 @@
 import React from 'react';
 import './css/sidebar.css';
-import { FaBars, FaHome, FaList, FaPlus, FaEdit } from 'react-icons/fa';
 import {
+    FaHome,
+    FaList,
+    FaPlus,
     FaEnvelope,
     FaBell,
     FaFlag,
     FaUser,
-    FaKey,
     FaSignOutAlt,
 } from 'react-icons/fa';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Nav from 'react-bootstrap/Nav';
+
+import { Dropdown, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const App = () => {
     const notificationCounts = {
@@ -27,7 +29,10 @@ const App = () => {
                         <img
                             src='assets/img/logo.png'
                             alt=''
-                            style={{ width: '180px', height: '80px' }}
+                            style={{
+                                width: '180px',
+                                height: '80px',
+                            }}
                         />
                     </div>
                     <div className='right-icons-dashboard'>
@@ -61,13 +66,10 @@ const App = () => {
                                 <span className='name'>Kentang</span>
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item>
+                                <Dropdown.Item as={Link} to='/edit-profile'>
                                     <FaUser /> Edit Profile
                                 </Dropdown.Item>
-                                <Dropdown.Item>
-                                    <FaKey /> Ganti Password
-                                </Dropdown.Item>
-                                <Dropdown.Item>
+                                <Dropdown.Item as={Link} to='/logout'>
                                     <FaSignOutAlt /> Logout
                                 </Dropdown.Item>
                             </Dropdown.Menu>
@@ -75,7 +77,7 @@ const App = () => {
                     </div>
                 </div>
                 <div className='sidebar'>
-                    <Nav defaultActiveKey='/dashboard' className='flex-column'>
+                    <Nav defaultAc tiveKey='/dashboard' className='flex-column'>
                         <Nav.Link href='/dashboard' className='dashboard-link'>
                             <FaHome className='dashboard-icon' /> Dashboard
                         </Nav.Link>
@@ -86,17 +88,10 @@ const App = () => {
                             <FaList className='list-produk-icon' /> List Produk
                         </Nav.Link>
                         <Nav.Link
-                            href='/tambah-produk'
+                            href='/produk-baru'
                             className='tambah-produk-link'
                         >
                             <FaPlus className='tambah-produk-icon' /> Tambahkan
-                            Produk
-                        </Nav.Link>
-                        <Nav.Link
-                            href='/perbarui-produk'
-                            className='perbarui-produk-link'
-                        >
-                            <FaEdit className='perbarui-produk-icon' /> Perbarui
                             Produk
                         </Nav.Link>
                     </Nav>

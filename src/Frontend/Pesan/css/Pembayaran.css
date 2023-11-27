@@ -188,13 +188,11 @@
     margin-bottom: 40px;
 }
 
-
 .pembayaran-total-harga .count-pembayaran {
     position: relative;
     right: 75px;
     top: 40px;
 }
-
 
 .custom-icons-cart-like {
     display: flex; /* Membuat ikon-ikon berbaris */

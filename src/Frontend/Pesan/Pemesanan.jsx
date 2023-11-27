@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import DaftarPropinsi from '../Components/DaftarPropinsi';
 import React, { useState } from 'react';
 import { AiFillHeart } from 'react-icons/ai';
-import { BiSolidTrashAlt} from 'react-icons/bi'
+import { BiSolidTrashAlt } from 'react-icons/bi';
 
 import FooterComponents from '../Components/FooterComponents';
 import Count from './Components/Count/Count';
@@ -190,13 +190,13 @@ const Pemesanan = () => {
                                 <div className='new-icons-cart-like'>
                                     <div className='new-to-cart'>
                                         <Link to='/new-cart'>
-                                           <AiFillHeart/>
+                                            <AiFillHeart />
                                         </Link>
                                     </div>
 
                                     <div className='new-my-like'>
                                         <Link to='/new-heart'>
-                                           <BiSolidTrashAlt/>
+                                            <BiSolidTrashAlt />
                                         </Link>
                                     </div>
                                 </div>

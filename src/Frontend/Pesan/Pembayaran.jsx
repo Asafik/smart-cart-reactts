@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { AiFillHeart } from 'react-icons/ai';
-import { BiSolidTrashAlt} from 'react-icons/bi'
-
+import { BiSolidTrashAlt } from 'react-icons/bi';
 
 import FooterComponents from '../Components/FooterComponents';
-import Count from './Components/Count/Count'
+import Count from './Components/Count/Count';
 import './css/Pembayaran.css';
 
 const Pembayaran = () => {
@@ -155,19 +154,18 @@ const Pembayaran = () => {
                                 </div>
 
                                 <div className='custom-icons-cart-like'>
-    <div className='custom-to-cart'>
-        <Link to='/custom-cart'>
-            <AiFillHeart />
-        </Link>
-    </div>
+                                    <div className='custom-to-cart'>
+                                        <Link to='/custom-cart'>
+                                            <AiFillHeart />
+                                        </Link>
+                                    </div>
 
-    <div className='custom-my-like'>
-        <Link to='/custom-heart'>
-            <BiSolidTrashAlt />
-        </Link>
-    </div>
-</div>
-
+                                    <div className='custom-my-like'>
+                                        <Link to='/custom-heart'>
+                                            <BiSolidTrashAlt />
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
                             <div className='sub-total-harga-container'>
                                 {' '}

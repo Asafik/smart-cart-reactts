@@ -1,4 +1,40 @@
 .dashboard-page {
     background-color: whitesmoke;
-    height: 100vh; /* Untuk mengisi seluruh tinggi layar */
+    height: 150vh; /* Untuk mengisi seluruh tinggi layar */
+}
+
+.dashboard-page p {
+    margin-left: 20%;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.image-container {
+    display: flex;
+    margin-left: 15%;
+    align-items: center;
+    margin-top: 50px; /* Sesuaikan sesuai kebutuhan */
+}
+
+.image-wrapper {
+    margin-left: 80px; /* Sesuaikan sesuai kebutuhan */
+    text-align: center;
+    background-color: white;
+    width: 180px;
+    padding: 20px;
+}
+
+.dashboard-image {
+    width: 80px; /* Sesuaikan sesuai kebutuhan */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container {
+    margin-top: 10px; /* Sesuaikan sesuai kebutuhan */
+}
+
+.text-container p {
+    margin: 0px 0;
+    font-size: 16px; /* Sesuaikan sesuai kebutuhan */
 }

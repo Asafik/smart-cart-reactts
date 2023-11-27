@@ -91,7 +91,7 @@
 }
 
 /* Gaya untuk kotak (box) yang melingkupi gambar dan teks */
-.box {
+.swiper-slider .box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Posisikan elemen secara vertical ke atas */
@@ -132,14 +132,17 @@
 
 .cart-icons {
     position: absolute;
-    top: 89%;
-    right: 30px; /* Adjust this value to control the distance from the right edge */
+    top: 87%;
+    right: 30px; /* Sesuaikan nilai ini untuk mengontrol jarak dari pinggir kanan */
     transform: translateY(-50%);
     background-color: #ffa506;
-    padding: 5px;
+    padding: 6px; /* Sesuaikan ukuran padding */
     color: white;
-    border-radius: 50px;
-    font-size: 20px;
+    border-radius: 50%; /* Menjadikan border-radius setengah dari lebar/tinggi untuk membuat bentuk lingkaran */
+    font-size: 24px; /* Sesuaikan ukuran font */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-home {

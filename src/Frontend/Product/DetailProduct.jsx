@@ -29,7 +29,10 @@ const DetailProduct = () => {
                             <span className='star'>&#9733;</span>
                             <span className='star'>&#9733;</span>
                             <span
-                                style={{ marginLeft: '10px', marginTop: '2px' }}
+                                style={{
+                                    marginLeft: '10px',
+                                    marginTop: '2px',
+                                }}
                             >
                                 100 Ulasan
                             </span>
@@ -64,7 +67,11 @@ const DetailProduct = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p style={{ marginTop: '10px' }}>
+                            <p
+                                style={{
+                                    marginTop: '10px',
+                                }}
+                            >
                                 Pembelian Dalam Bentuk Pack Bukan Satuan
                             </p>
                         </div>

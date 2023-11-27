@@ -1,0 +1,41 @@
+.infoharga-add {
+    width: 27%; /* lebar elemen */
+    height: 300px; /* tinggi elemen */
+    background-color: #ffffff; /* warna putih */
+    box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.1); /* efek bayangan dengan warna hitam transparan dan ketebalan 10px */
+    /* tambahkan properti lain sesuai kebutuhan */
+    margin-left: 3%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.infoharga-add h3 {
+    font-size: 25px;
+}
+
+.infoharga-add label {
+    margin-top: 10px;
+}
+
+.infoharga-add input {
+    /* Tambahkan gaya untuk elemen input */
+    width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
+    padding: 8px; /* Sesuaikan padding sesuai kebutuhan */
+    margin-top: 5px; /* Sesuaikan margin sesuai kebutuhan */
+    border-radius: 10px;
+}
+
+.infoharga-add hr {
+    border: 1px solid #000; /* Ganti #000 dengan warna yang diinginkan */
+    margin: 15px 0; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+.infoharga-add p {
+    margin-top: -10px;
+}
+
+.infoharga-add .toggole-ready {
+    margin-left: 71%;
+    margin-top: 5px;
+}

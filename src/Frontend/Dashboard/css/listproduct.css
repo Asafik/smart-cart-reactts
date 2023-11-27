@@ -1,0 +1,153 @@
+.list-product {
+    background-color: whitesmoke;
+    height: 150vh; /* Untuk mengisi seluruh tinggi layar */
+}
+
+.list-product-detail {
+    width: 75%; /* lebar elemen */
+    height: 550px; /* tinggi elemen */
+    background-color: #ffffff; /* warna putih */
+    box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.1); /* efek bayangan dengan warna hitam transparan dan ketebalan 10px */
+    /* tambahkan properti lain sesuai kebutuhan */
+    margin-left: 20%;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.list-product-detail h5 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.list-product-detail .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.list-product-detail .search {
+    margin-right: 120px;
+    margin-top: -10px;
+}
+
+.list-product-detail hr {
+    border: none; /* Menghilangkan border bawaan */
+    height: 2px; /* Atur tinggi garis */
+    background-color: #333; /* Warna garis */
+}
+
+.list-product-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.list-product-container .no {
+    margin-right: -20px;
+}
+
+.list-product-container .text-product {
+    margin-right: 14%;
+}
+
+.list-product-container p {
+    /* Gaya tambahan untuk elemen-elemen anak jika diperlukan */
+    margin: 0; /* Menghapus margin default */
+    padding: 10px; /* Menambahkan padding untuk penampilan yang lebih baik */
+    margin-top: -15px;
+    color: #7c7c7c;
+    margin-right: 70px;
+}
+
+/* Gaya tambahan untuk ikon Chevron jika digunakan */
+.chevron-icons {
+    display: flex;
+    flex-direction: column;
+    /* Menyusun ikon Chevron secara vertikal */
+    margin-top: -10px;
+}
+
+.chevron-icons p {
+    margin-top: -35px;
+    margin-left: 10px;
+}
+
+.chevron-icons svg {
+    /* Gaya tambahan untuk ikon jika diperlukan */
+    width: 15px;
+    height: 15px;
+    color: #7c7c7c;
+    /* Anda dapat menyesuaikan properti lainnya sesuai kebutuhan Anda */
+}
+
+.data-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nomor-product {
+    flex: 1; /* Menyesuaikan flex agar elemen menempati sebanyak mungkin ruang yang tersedia */
+}
+.nomor-product p {
+    margin-top: 25px;
+}
+
+.seri-product {
+    display: flex;
+    align-items: center;
+    margin-right: 16%;
+    margin-top: 5px;
+}
+
+.seri-product img {
+    width: 50px; /* Atur lebar gambar sesuai kebutuhan Anda */
+    height: auto; /* Biarkan tinggi gambar disesuaikan agar proporsi tetap terjaga */
+    margin-right: 10px; /* Memberikan margin di sebelah kanan gambar */
+}
+
+.seri-product p {
+    margin: 0; /* Menghilangkan margin default dari <p> */
+    font-weight: bold;
+}
+
+.total-penjualan {
+    margin-right: 120px;
+    margin-top: 25px;
+}
+
+.status-product {
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+.sku-product {
+    margin-right: 85px;
+    margin-top: 25px;
+}
+
+.stok-ready {
+    margin-right: 105px;
+    margin-top: 15px;
+}
+
+.total-qty {
+    margin-right: 44px;
+    margin-top: 25px;
+}
+
+.edit {
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.edit a {
+    color: black;
+}
+
+.edit svg:hover {
+    color: red;
+}
