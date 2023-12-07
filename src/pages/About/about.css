@@ -1,0 +1,245 @@
+.about {
+    width: 90%; /* Ganti ukuran sesuai keinginan Anda */
+    height: 500px; /* Ganti ukuran sesuai keinginan Anda */
+    background: linear-gradient(
+        to bottom,
+        #feb900,
+        #ffe500
+    ); /* Ganti warna gradien sesuai keinginan Anda */
+
+    border-radius: 40px; /* Opsi: tambahkan sudut melengkung sesuai keinginan Anda */
+
+    /* Menengahkan horizontal elemen */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    animation: slideDown 1s ease-out;
+}
+
+/* Keyframes untuk animasi slide down */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about h3 {
+    font-size: 40px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 10px; /* Sesuaikan jarak antara judul dan teks */
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.about p {
+    font-size: 20px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 20px; /* Sesuaikan jarak antara paragraf */
+    text-align: justify;
+}
+
+.about .beli-product {
+    color: #000000;
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000; /* Menambahkan garis di pinggirannya */
+    width: 23%;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about .beli-product svg {
+    margin-left: 10px; /* Sesuaikan jarak antara ikon dan teks */
+}
+
+.about .beli-product:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff; /* Menambahkan garis di pinggirannya */
+}
+
+.about img {
+    max-width: 100%; /* Gambar tidak melebihi lebar kotak */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+    display: block; /* Hilangkan spasi di bawah gambar */
+    margin: 0 auto; /* Tengahkan gambar horizontal */
+    margin-top: 50px;
+}
+
+.about-two h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.look-all-product {
+    color: #000000;
+    font-size: 1.3rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000; /* Menambahkan garis di pinggirannya */
+    width: 33%;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.look-all-product:hover {
+    color: #ffffff;
+    background-color: black;
+}
+
+.look-all-product svg {
+    margin-left: 20px; /* Sesuaikan jarak antara ikon dan teks */
+    margin-top: 5px;
+}
+
+.about-two img {
+    max-width: 90%; /* Gambar tidak melebihi lebar kontainer */
+    display: block; /* Hilangkan margin putih di bawah gambar */
+    margin: 0 auto; /* Pusatkan gambar secara horizontal */
+}
+
+.about-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Menambahkan jarak antara dua set gambar di bawahnya */
+    margin-top: 50px;
+}
+
+.image-text {
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 20px; /* Menambahkan margin kiri */
+    margin-right: 20px; /* Menambahkan margin kanan */
+    cursor: pointer;
+}
+
+.image-text:hover {
+    background-color: #fff4cc;
+    padding: 20px; /* Atur padding lebih besar saat dihover */
+    transform: scale(1.1); /* Atur skala lebih besar saat dihover */
+}
+
+.image-text img {
+    margin: 5px;
+    max-width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.image-text p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    font-weight: bold;
+}
+
+.image-text {
+    text-align: center;
+    margin-top: 5px;
+    padding: 0px; /* Menambahkan padding ke dalam kotak */
+    border-radius: 20px; /* Mengatur sudut border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-three {
+    background: linear-gradient(
+        to right,
+        #ffc701,
+        #ffecaa
+    ); /* Gradient horizontal dari kiri ke kanan */
+    padding: 30px; /* Atur padding sesuai kebutuhan */
+    border-radius: 30px; /* Atur sudut border */
+}
+
+.about-three h1 {
+    font-size: 50px; /* Ukuran font */
+    color: #ffffff; /* Warna teks */
+    margin-top: 100px;
+}
+
+.about-three .beli-product {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffffff; /* Menambahkan garis di pinggirannya */
+    width: 23%;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-three .beli-product:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000; /* Menambahkan garis di pinggirannya */
+}
+.about-three img {
+    max-width: 100%; /* Membuat gambar tidak melebihi lebar kotak */
+    width: 499px;
+    height: 444px;
+    top: 1350px;
+    left: 169px;
+    border-radius: 45px 250px 45px 45px; /* Penulisan border-radius yang benar */
+}
+
+.about-four {
+    margin-top: 5%;
+}
+
+.about-four .ulasan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.about-four .ulasan h1 {
+    font-size: 50px;
+}
+
+.about-four .ulasan .ulasan-icons {
+    color: #333;
+    font-size: 35px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.ulasan-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-icon {
+    margin: 0 20px; /* Atur jarak antara ikon */
+}
+
+.about-four .text {
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+.ulasan-pelanggan {
+    margin-top: 25%;
+    margin-bottom: 50px;
+}

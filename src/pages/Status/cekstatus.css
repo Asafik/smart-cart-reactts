@@ -1,0 +1,127 @@
+/* status */
+
+.box-status {
+    display: flex;
+    box-shadow:
+        4px 4px 8px rgba(0, 0, 0, 0.1),
+        -4px -4px 8px rgba(0, 0, 0, 0.1);
+    width: 47%;
+    height: 200px;
+    border-radius: 8px;
+    margin-left: 28%;
+}
+
+.box-container {
+    text-align: center; /* Untuk mengatur teks di dalamnya menjadi tengah */
+    margin-right: 60px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.box-container img {
+    width: 50px; /* Ukuran gambar yang sama */
+    height: 50px; /* Ukuran gambar yang sama */
+    box-shadow: none;
+}
+
+.box-text,
+.fastdelivery-text,
+.arrival-text {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffa506;
+}
+
+.box-container .line-left {
+    position: absolute;
+    height: 2px; /* Ketebalan garis */
+    width: 160px; /* Panjang garis */
+    background-color: #ffa506; /* Warna garis */
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.box-container .line-right {
+    position: absolute;
+    height: 2px; /* Ketebalan garis */
+    width: 160px; /* Panjang garis */
+    background-color: #ffa506; /* Warna garis */
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+/* Styling untuk elemen status-pemesanan-detail */
+.status-pemesanan-detail {
+    width: 47%;
+    height: 450px;
+    background-color: #fff; /* Ganti dengan warna latar belakang yang diinginkan */
+    border-radius: 8px;
+    box-shadow:
+        4px 4px 8px rgba(0, 0, 0, 0.1),
+        -4px -4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 28%;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.status-pemesanan-detail p {
+    margin-bottom: 10px;
+    line-height: 1.5; /* Menyesuaikan jarak antar baris */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* CSS */
+.detail-order {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.detail-order-img {
+    margin-right: 20px;
+}
+
+.detail-order-img img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.detail-order-text {
+    flex-grow: 1;
+}
+
+.detail-order-text p {
+    margin: 0;
+}
+
+.detail-order-text span {
+    font-weight: normal;
+}
+
+.detail-order-text hr {
+    border: 1px solid black;
+    margin: 10px 0; /* Memberikan margin di atas dan bawah hr */
+}
+
+.status-pemesanan-detail a {
+    color: #fff; /* Warna teks link */
+    background-color: #ffa506; /* Warna latar belakang link */
+    text-decoration: none; /* Hilangkan garis bawah link */
+    padding: 10px 15px; /* Padding di dalam link */
+    display: inline-block; /* Jadikan link sebagai inline block */
+    border-radius: 5px; /* Sudut melengkung untuk menyerupai tombol */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+    font-weight: bold;
+    margin-left: 37%;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.status-pemesanan-detail a:hover {
+    background-color: #a56900; /* Warna latar belakang saat dihover */
+    text-decoration: none; /* Hilangkan garis bawah pada hover */
+}

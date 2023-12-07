@@ -1,0 +1,175 @@
+/* informasi */
+.informasi {
+    margin-top: 100px;
+}
+
+.informasi-profile {
+    text-align: left;
+    margin-top: 10%;
+}
+
+.informasi-profile h3 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* CSS untuk gambar (Image) */
+.informasi-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* CSS untuk Nama dan Email */
+.informasi-profile .name {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.informasi-profile .email {
+    color: #999999;
+}
+
+/* Gaya teks tautan di dalam div menu */
+.menu a {
+    color: rgb(135, 132, 132); /* Warna teks default */
+    text-decoration: none; /* Hilangkan garis bawah default pada tautan */
+    display: block; /* Membuat tautan menjadi blok untuk mengisi seluruh lebar div */
+    padding: 5px 0; /* Sesuaikan padding sesuai keinginan Anda */
+    font-weight: normal; /* Ketebalan font default */
+    margin-bottom: 5px; /* Atur margin antara tautan sesuai keinginan Anda */
+    transition:
+        color 0.3s,
+        font-weight 0.3s; /* Animasi perubahan warna dan font-weight */
+    font-size: 20px;
+}
+
+/* Gaya teks tautan saat hover (saat kursor diarahkan ke tautan) */
+.menu a:hover {
+    color: #ffa506; /* Ubah warna teks saat hover sesuai keinginan Anda */
+    font-weight: bold; /* Buat teks lebih tebal saat hover */
+}
+
+.informasi-pribadi {
+    margin-top: 10%;
+}
+
+.informasi-pribadi h3 {
+    font-size: 30px; /* Ukuran font untuk judul */
+    margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+    color: #ffa506;
+}
+
+.informasi-pribadi p {
+    font-size: 11px; /* Ukuran font untuk paragraf */
+    color: #7d7d7d; /* Warna teks */
+}
+
+.informasi-pribadi .data-informasi p {
+    font-size: 15px; /* Ukuran font untuk paragraf */
+    color: #7d7d7d; /* Warna teks */
+    padding: 0px;
+    font-weight: bold;
+}
+
+.informasi-pribadi .data-informasi span {
+    display: inline-block;
+    margin-left: 20px; /* Atur jarak seperti tab sesuai kebutuhan Anda */
+    background-color: #dfdfdf;
+    color: rgb(100, 100, 100);
+    width: 60%;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.informasi-pribadi .data-informasi .nama {
+    margin-left: 21%; /* Atur jarak seperti tab sesuai kebutuhan Anda */
+    padding: 5px;
+}
+
+.informasi-pribadi .data-informasi .email {
+    margin-left: 22%; /* Atur jarak seperti tab sesuai kebutuhan Anda */
+    padding: 5px;
+}
+
+.informasi-pribadi .data-informasi .no-hp {
+    padding: 5px;
+}
+
+.informasi-pribadi .data-informasi .alamat {
+    margin-left: 19%; /* Atur jarak seperti tab sesuai kebutuhan Anda */
+    padding: 5px;
+}
+
+.simpan.infomasi {
+    background-color: #ffa506; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 5px 10px; /* Padding atas-bawah 10px, kiri-kanan 20px */
+    border-radius: 5px; /* Sudut elemen dibulatkan */
+    text-decoration: none; /* Hapus garis bawah pada tautan */
+    display: inline-block; /* Membuat elemen tampil secara inline */
+    transition: background-color 0.3s ease; /* Efek transisi perubahan warna latar belakang */
+    font-weight: bold;
+    margin-left: 74%;
+    margin-top: 10px;
+}
+
+.simpan.infomasi:hover {
+    background-color: #824401; /* Warna latar belakang saat hover */
+}
+
+.ganti-profil {
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* Gaya untuk foto profil */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk input file */
+.file-input {
+    display: none;
+}
+
+/* UserProfile.css */
+
+/* Gaya untuk label file */
+.file-label {
+    display: block;
+    background-color: #ffa506;
+    color: #fff;
+    padding: 0px 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: -15%;
+    position: relative;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    /* Geser ke kanan */
+    margin-left: 54%; /* Menggeser label ke kanan */
+}
+
+.file-label:hover {
+    background-color: #b36500;
+}
+
+.ganti-profil p {
+    font-size: 14px;
+    margin: 2px;
+    color: #7d7d7d;
+}

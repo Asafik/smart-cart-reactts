@@ -1,0 +1,76 @@
+.custom-checkbox {
+    position: relative;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #ffc701;
+}
+
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+    display: block;
+    cursor: pointer;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-components {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+.checkbox-components .text-tipe-components {
+    margin-right: 33.5%;
+}
+
+.checkbox-components .text-tipe-components-3 {
+    margin-right: 12.4%;
+}
+
+.checkbox-components .text-tipe-components-4 {
+    margin-right: 27.5%;
+}
+
+.checkbox-components p {
+    /* Gaya tambahan untuk elemen-elemen anak jika diperlukan */
+    margin: 0; /* Menghapus margin default */
+    padding: 10px; /* Menambahkan padding untuk penampilan yang lebih baik */
+    color: #000000;
+    margin-right: 80px;
+    font-size: 18px;
+}
+
+.notif-page hr {
+    margin-top: 0px;
+    width: 100%;
+}

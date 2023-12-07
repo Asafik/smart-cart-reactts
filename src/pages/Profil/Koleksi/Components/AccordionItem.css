@@ -1,0 +1,59 @@
+/* AccordionItem.css */
+.accordion-item-notifikasi {
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan aturan box-shadow */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.accordion-title-notifikasi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffffff;
+
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.title-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.title-content img {
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.title-content span {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.title-content p {
+    font-size: 14px;
+    margin-top: 25px; /* Jarak antara span dan p */
+    margin-left: -45px;
+}
+
+.title-text {
+    margin-right: 40px;
+}
+
+.chevron-icon-accordion-notifikasi {
+    font-size: 20px;
+    color: #333;
+}
+
+.accordion-content-notifikasi {
+    padding: 10px;
+    margin-left: 20px;
+    text-align: justify;
+    margin-right: 20px;
+}
