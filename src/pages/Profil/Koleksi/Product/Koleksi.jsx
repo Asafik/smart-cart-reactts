@@ -30,7 +30,9 @@ const Koleksi = () => {
                                 <Link to='/informasi'>Informasi Pribadi</Link>
                                 <Link to='/koleksi'>Koleksi Saya</Link>
                                 <Link to='/notifikasi'>Notifikasi</Link>
-                                <Link to='/bahasa'>Bahasa</Link>
+                                <Link to='/ubah-kata-sandi'>
+                                    Ubah Kata Sandi
+                                </Link>
                                 <Link to='/logout'>Keluar</Link>
                             </div>
                         </div>

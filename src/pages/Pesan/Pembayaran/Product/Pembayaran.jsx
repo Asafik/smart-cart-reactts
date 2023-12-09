@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AiFillHeart } from 'react-icons/ai';
 import { BiSolidTrashAlt } from 'react-icons/bi';
 
@@ -10,9 +10,25 @@ import './Pembayaran.css';
 
 const Pembayaran = () => {
     const [selectedOption, setSelectedOption] = useState(null);
+    const [showPopup, setShowPopup] = useState(false);
+    const navigate = useNavigate();
 
     const handleRadioChange = (value) => {
         setSelectedOption(value);
+    };
+
+    const handleContinue = () => {
+        if (selectedOption) {
+            // Ganti '/petunjuk-${selectedOption}' dengan path yang sesuai
+            navigate(`/petunjuk-${selectedOption}`);
+        } else {
+            // Tampilkan popup karena bank tidak dipilih
+            setShowPopup(true);
+        }
+    };
+
+    const handlePopupClose = () => {
+        setShowPopup(false);
     };
 
     return (
@@ -53,6 +69,7 @@ const Pembayaran = () => {
                         <div className='pembayaran'>
                             <h2>Metode Pembayaran</h2>
                             <div className='h2-line'></div>
+
                             <div className='pembayaran-wallet'>
                                 <img
                                     src='assets/img/Pembayaran/shopeepay.png'
@@ -159,17 +176,19 @@ const Pembayaran = () => {
                                     </label>
                                 </div>
                             </div>
+
                             <div className='navigation-buttons-pembayaran'>
                                 <Link to='/halaman-sebelumnya'>
                                     <button className='button-kembali'>
                                         Kembali
                                     </button>
                                 </Link>
-                                <Link to={`/petunjuk-${selectedOption}`}>
-                                    <button className='button-lanjut'>
-                                        Bayar Sekarang
-                                    </button>
-                                </Link>
+                                <button
+                                    className='button-lanjut'
+                                    onClick={handleContinue}
+                                >
+                                    Bayar Sekarang
+                                </button>
                             </div>
                         </div>
                     </Col>
@@ -177,6 +196,7 @@ const Pembayaran = () => {
                         <div className='pembayaran-total'>
                             <h2>Pemesanan</h2>
                             <div className='h2-line-pembayaran-total'></div>
+
                             <div className='pembayaran-total-harga'>
                                 <img src='assets/img/Card/cat.png' alt='' />
                                 <h2>Animal Smart Card</h2>
@@ -199,11 +219,10 @@ const Pembayaran = () => {
                                     </div>
                                 </div>
                             </div>
+
                             <div className='sub-total-harga-container'>
-                                {' '}
-                                {/* Div baru */}
-                                <div className='sub-total-line'></div>{' '}
-                                {/* Garis */}
+                                <div className='sub-total-line'></div>
+
                                 <div className='sub-total-harga'>
                                     <p>
                                         Subtotal <span>Rp. 30.000</span>
@@ -223,6 +242,13 @@ const Pembayaran = () => {
                 </Row>
             </Container>
             <Footer />
+
+            <div className={`popup ${showPopup ? 'show' : ''}`}>
+                <div className='popup-content'>
+                    <p>Harap pilih metode pembayaran dari salah satu bank.</p>
+                    <button onClick={handlePopupClose}>OK</button>
+                </div>
+            </div>
         </>
     );
 };

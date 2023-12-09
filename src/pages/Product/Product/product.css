@@ -92,11 +92,10 @@
     font-size: 27px; /* Sesuaikan ukuran font */
     display: flex;
     width: 40px; /* Lebar ikon yang diinginkan */
-    height: 40px; 
+    height: 40px;
 }
 
 .product-cart-icons svg {
     margin-left: 5px;
     margin-bottom: 10px;
 }
-

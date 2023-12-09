@@ -22,7 +22,7 @@ import EditProfil from './pages/dashboard/Profil/Edit/EditProfil';
 
 //Profile Page
 import Informasi from './pages/Profil/Informasi/Informasi';
-import Bahasa from './pages/Profil/Bahasa/Bahasa';
+import ChangePassword from './pages/Profil/ChangePassword/ChangePassword';
 import Notifikasi from './pages/Profil/Notifikasi/Notifikasi';
 import Koleksi from './pages/Profil/Koleksi/Product/Koleksi';
 
@@ -54,7 +54,7 @@ function App() {
                     <Route path='/update-produk' Component={Update} />
                     <Route path='/edit-profile' Component={EditProfil} />
                     <Route path='/informasi' Component={Informasi} />
-                    <Route path='/bahasa' Component={Bahasa} />
+                    <Route path='/ubah-kata-sandi' Component={ChangePassword} />
                     <Route path='/notifikasi' Component={Notifikasi} />
                     <Route path='/koleksi' Component={Koleksi} />
                     <Route path='/pemesanan' Component={Pemesanan} />

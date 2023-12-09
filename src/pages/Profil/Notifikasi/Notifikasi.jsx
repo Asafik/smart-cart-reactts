@@ -4,8 +4,9 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { HiOutlineInformationCircle } from 'react-icons/hi';
 import { useState } from 'react';
 
-import Navbar from '../../../Components/Navbar/NavbarComponents';
-import Footer from '../../../Components/Footer/FooterComponents';
+import Navbar from '../../../components/Navbar/NavbarComponents';
+import Footer from '../../../components/Footer/FooterComponents';
+
 import './notifikasi.css';
 
 const Notifikasi = () => {
@@ -42,7 +43,9 @@ const Notifikasi = () => {
                                 <Link to='/informasi'>Informasi Pribadi</Link>
                                 <Link to='/koleksi'>Koleksi Saya</Link>
                                 <Link to='/notifikasi'>Notifikasi</Link>
-                                <Link to='/bahasa'>Bahasa</Link>
+                                <Link to='/ubah-kata-sandi'>
+                                    Ubah Kata Sandi
+                                </Link>
                                 <Link to='/logout'>Keluar</Link>
                             </div>
                         </div>
