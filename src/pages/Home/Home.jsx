@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';
-import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 // / Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

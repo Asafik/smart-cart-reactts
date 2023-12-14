@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //Auth Page
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
+import ForgotPassword from './pages/Auth/ForgoutPassword/ForgoutPassword';
+import ForgoutPasswordEmail from './pages/Auth/ForgoutPasswordEmail/ForgoutPasswordEmail';
+import ChangePasswordForgoutEmail from './pages/Auth/ChangePassword/ChangePasswordForgoutEmail';
 
 //fronPage
 import Home from './pages/Home/Home';
@@ -73,6 +76,12 @@ function App() {
                     <Route
                         path='/petunjuk-permata'
                         Component={CaraBayarPermata}
+                    />
+                    <Route path='/lupa-kata-sandi' Component={ForgotPassword} />
+                    <Route path='/cek-email' Component={ForgoutPasswordEmail} />
+                    <Route
+                        path='/buat-kata-sandi-baru'
+                        Component={ChangePasswordForgoutEmail}
                     />
                 </Routes>
             </Router>

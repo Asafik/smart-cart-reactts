@@ -48,13 +48,13 @@
 }
 
 .input-icon input {
-    padding-left: 30px; /* Mengatur padding kiri agar ikon tidak bertabrakan dengan teks */
+    padding-left: 33px; /* Mengatur padding kiri agar ikon tidak bertabrakan dengan teks */
 }
 
 .input-icon .icon {
     position: absolute;
     left: 8px; /* Atur jarak antara ikon dan tepi input */
-    top: 58%; /* Menggeser ikon ke bawah */
+    top: 54%; /* Menggeser ikon ke bawah */
     transform: translateY(-50%);
     color: #aaa; /* Warna ikon */
 }

@@ -1,6 +1,6 @@
-import { Container, Row, Col, Form, Modal, Button } from 'react-bootstrap';
+import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { PiEye, PiEyeClosed } from 'react-icons/pi';
 
 import Navbar from '../../../Components/Navbar/NavbarComponents';
@@ -8,6 +8,7 @@ import Footer from '../../../Components/Footer/FooterComponents';
 import './changepassworduser.css';
 
 const ChangePassword = () => {
+    // State untuk menyimpan nilai input dan status tampilan password
     const [oldPassword, setOldPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -16,39 +17,49 @@ const ChangePassword = () => {
     const [errorPopupVisible, setErrorPopupVisible] = useState(false);
     const [successPopupVisible, setSuccessPopupVisible] = useState(false);
 
+    // Fungsi untuk meng-handle perubahan nilai input kata sandi lama
     const handleChangeOldPassword = (e) => {
         setOldPassword(e.target.value);
     };
 
+    // Fungsi untuk meng-handle perubahan nilai input kata sandi baru
     const handleChangeNewPassword = (e) => {
         setNewPassword(e.target.value);
     };
 
+    // Fungsi untuk meng-handle perubahan nilai input konfirmasi kata sandi baru
     const handleChangeConfirmPassword = (e) => {
         setConfirmPassword(e.target.value);
     };
 
+    // Fungsi untuk toggle tampilan/hide password lama
     const toggleShowOldPassword = () => {
         setShowOldPassword(!showOldPassword);
     };
 
+    // Fungsi untuk toggle tampilan/hide password baru
     const toggleShowPassword = () => {
         setShowPassword(!showPassword);
     };
 
+    // Fungsi untuk menampilkan popup kesalahan
     const showErrorPopup = () => setErrorPopupVisible(true);
+    // Fungsi untuk menyembunyikan popup kesalahan
     const hideErrorPopup = () => setErrorPopupVisible(false);
 
+    // Fungsi untuk menampilkan popup sukses
     const showSuccessPopup = () => setSuccessPopupVisible(true);
+    // Fungsi untuk menyembunyikan popup sukses
     const hideSuccessPopup = () => setSuccessPopupVisible(false);
 
+    // Fungsi untuk meng-handle pengubahan kata sandi
     const handleUbahKataSandi = () => {
         // Logika untuk memeriksa kesesuaian kata sandi
         if (oldPassword === newPassword) {
             // Kata sandi lama dan baru sama, munculkan popup error
             showErrorPopup();
         } else {
-            // Logika untuk mengganti kata sandi (tambahkan sesuai kebutuhan)
+            // Logika untuk mengganti kata sandi
             // ...
             // Setelah berhasil mengganti kata sandi, munculkan popup sukses
             showSuccessPopup();
@@ -57,10 +68,12 @@ const ChangePassword = () => {
 
     return (
         <>
+            {/* Navbar dan Konten */}
             <Navbar />
             <Container>
                 <Row className='change-password-page min-vh-100'>
                     <Col>
+                        {/* Informasi Profil */}
                         <div className='informasi-profile'>
                             <h3>Akun Saya</h3>
                             {/* Tampilkan foto profil */}
@@ -83,9 +96,11 @@ const ChangePassword = () => {
                         </div>
                     </Col>
                     <Col>
+                        {/* Form Ubah Kata Sandi */}
                         <div className='change-password-user'>
                             <h3>Ubah Kata Sandi</h3>
 
+                            {/* Input Kata Sandi Lama */}
                             <div className='sandi-lama-user'>
                                 <label>Kata Sandi Lama:</label>
                                 <div className='input-with-icon-user'>
@@ -112,6 +127,7 @@ const ChangePassword = () => {
                                 </div>
                             </div>
 
+                            {/* Input Kata Sandi Baru */}
                             <div className='sandi-baru-user'>
                                 <label>Kata Sandi Baru:</label>
                                 <div className='input-with-icon-user'>
@@ -135,6 +151,8 @@ const ChangePassword = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            {/* Input Konfirmasi Kata Sandi Baru */}
                             <div className='konfirmasi-sandi-baru-user'>
                                 <label>Konfirmasi Kata Sandi Baru:</label>
                                 <div className='input-with-icon-user'>
@@ -158,6 +176,8 @@ const ChangePassword = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            {/* Tombol Ubah Kata Sandi */}
                             <button
                                 className='ubah-kata-sandi-button'
                                 onClick={handleUbahKataSandi}
@@ -169,8 +189,10 @@ const ChangePassword = () => {
                     <Col></Col>
                 </Row>
             </Container>
+
+            {/* Footer */}
             <Footer />
-            
+
             {/* Popup Kesalahan */}
             <Modal show={errorPopupVisible} onHide={hideErrorPopup}>
                 <Modal.Header closeButton>
@@ -180,7 +202,11 @@ const ChangePassword = () => {
                     Kata sandi lama dan kata sandi baru tidak boleh sama.
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button className='popup-change-password-failed' variant="secondary" onClick={hideErrorPopup}>
+                    <Button
+                        className='popup-change-password-failed'
+                        variant='secondary'
+                        onClick={hideErrorPopup}
+                    >
                         Tutup
                     </Button>
                 </Modal.Footer>
@@ -195,7 +221,11 @@ const ChangePassword = () => {
                     Selamat, Anda berhasil mengganti kata sandi baru!
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button className='popup-change-password-succes' variant="secondary" onClick={hideSuccessPopup}>
+                    <Button
+                        className='popup-change-password-succes'
+                        variant='secondary'
+                        onClick={hideSuccessPopup}
+                    >
                         Tutup
                     </Button>
                 </Modal.Footer>
