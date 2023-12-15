@@ -90,7 +90,7 @@ const Pembayaran = () => {
                             </div>
 
                             <div className='pembayaran-bank'>
-                                <div class='pembayaran-bank-item'>
+                                <div className='pembayaran-bank-item'>
                                     <input
                                         type='radio'
                                         id='bri'
@@ -107,7 +107,7 @@ const Pembayaran = () => {
                                         />
                                     </label>
                                 </div>
-                                <div class='pembayaran-bank-item'>
+                                <div className='pembayaran-bank-item'>
                                     <input
                                         type='radio'
                                         id='bni'
@@ -124,7 +124,7 @@ const Pembayaran = () => {
                                         />
                                     </label>
                                 </div>
-                                <div class='pembayaran-bank-item'>
+                                <div className='pembayaran-bank-item'>
                                     <input
                                         type='radio'
                                         id='bca'
@@ -141,7 +141,7 @@ const Pembayaran = () => {
                                         />
                                     </label>
                                 </div>
-                                <div class='pembayaran-bank-item'>
+                                <div className='pembayaran-bank-item'>
                                     <input
                                         type='radio'
                                         id='mandiri'
@@ -158,7 +158,7 @@ const Pembayaran = () => {
                                         />
                                     </label>
                                 </div>
-                                <div class='pembayaran-bank-item'>
+                                <div className='pembayaran-bank-item'>
                                     <input
                                         type='radio'
                                         id='permata'
@@ -178,7 +178,7 @@ const Pembayaran = () => {
                             </div>
 
                             <div className='navigation-buttons-pembayaran'>
-                                <Link to='/halaman-sebelumnya'>
+                                <Link to='/pemesanan'>
                                     <button className='button-kembali'>
                                         Kembali
                                     </button>

@@ -2,7 +2,7 @@ import Navbar from '../../components/Navbar/NavbarComponents';
 import Footer from '../../components/Footer/FooterComponents';
 
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import {FaArrowRight } from 'react-icons/fa';
 import {
     BsArrowLeftCircle,
     BsArrowRightCircle,
@@ -67,7 +67,7 @@ const About = () => {
                     </Col>
                     <Col>
                         <div className='about-image'>
-                            <div class='image-text'>
+                            <div className='image-text'>
                                 <img
                                     src='assets/img/about/cookie-man.png'
                                     alt=''
@@ -78,7 +78,7 @@ const About = () => {
                                     Game
                                 </p>
                             </div>
-                            <div class='image-text'>
+                            <div className='image-text'>
                                 <img src='assets/img/about/eating.png' alt='' />
                                 <p>
                                     Belajar Nama <br />
@@ -88,7 +88,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className='about-image'>
-                            <div class='image-text'>
+                            <div className='image-text'>
                                 <img
                                     src='assets/img/about/School-prep.png'
                                     alt=''
@@ -99,7 +99,7 @@ const About = () => {
                                     Nama Hewan
                                 </p>
                             </div>
-                            <div class='image-text'>
+                            <div className='image-text'>
                                 <img src='assets/img/about/Frog.png' alt='' />
                                 <p>
                                     Memperluas <br />

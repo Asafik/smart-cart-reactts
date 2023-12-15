@@ -40,7 +40,7 @@ const Home = () => {
                             </p>
 
                             <div className='custom-link'>
-                                <Link to='/halaman-tujuan'>
+                                <Link to='/produk'>
                                     Beli Sekarang
                                     <span className='cart-box'>
                                         <FaShoppingCart />
@@ -56,9 +56,9 @@ const Home = () => {
             </Container>
             <div className='product-selengkapnya'>
                 <h1>Produk Terlaris</h1>
-                <p>
-                    Lihat Semua Produk <FaArrowAltCircleRight />
-                </p>
+                <Link to ="/produk"> Lihat Semua Produk <FaArrowAltCircleRight /></Link>
+                   
+                
             </div>
             <div className='w-100 min-vh-100 d-flex align-items-center'>
                 <Swiper
@@ -160,7 +160,7 @@ const Home = () => {
                                     Duis aute irure dolor in .
                                 </p>
                                 <div className='selengkapnya-link'>
-                                    <Link to='/halaman-tujuan'>
+                                    <Link to='/produk'>
                                         Beli Sekarang
                                         <span className='chevron-right'>
                                             <FaChevronRight />

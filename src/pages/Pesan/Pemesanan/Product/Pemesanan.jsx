@@ -152,7 +152,7 @@ const Pemesanan = () => {
                                 />
                             </div>
                             <div className='navigation-buttons-pemesanan'>
-                                <Link to='/halaman-sebelumnya'>
+                                <Link to='/detail-produk'>
                                     <button className='button-kembali'>
                                         Kembali
                                     </button>
