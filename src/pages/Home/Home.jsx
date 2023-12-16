@@ -56,9 +56,10 @@ const Home = () => {
             </Container>
             <div className='product-selengkapnya'>
                 <h1>Produk Terlaris</h1>
-                <Link to ="/produk"> Lihat Semua Produk <FaArrowAltCircleRight /></Link>
-                   
-                
+                <Link to='/produk'>
+                    {' '}
+                    Lihat Semua Produk <FaArrowAltCircleRight />
+                </Link>
             </div>
             <div className='w-100 min-vh-100 d-flex align-items-center'>
                 <Swiper

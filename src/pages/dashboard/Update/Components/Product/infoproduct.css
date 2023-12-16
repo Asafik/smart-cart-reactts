@@ -1,5 +1,5 @@
 .info-product {
-    margin-top: -29%;
+    margin-top: 3%;
 }
 
 .no-border-radius-right {
@@ -9,6 +9,8 @@
 /* Tambahkan ini ke file CSS Anda */
 .form-group {
     margin-bottom: 2px; /* Sesuaikan jarak bawah antara form-group */
+    padding: 20px;
+    margin-top: -30px;
 }
 
 /* Sesuaikan jarak antara label dan input */
@@ -24,21 +26,9 @@
 }
 
 textarea#productDescription {
-    height: 197px; /* Tinggi awal textarea */
+    height: 250px; /* Tinggi awal textarea */
     resize: vertical; /* Izinkan resize hanya secara vertikal */
     overflow: auto; /* Tambahkan overflow untuk scrollbar jika kontennya terlalu banyak */
-}
-
-.empty-space {
-    background-color: white;
-    border: 1px solid #000000;
-    height: 350px; /* Sesuaikan tinggi sesuai kebutuhan */
-    width: 300px; /* Sesuaikan lebar sesuai kebutuhan */
-    position: relative;
-    top: 101%; /* Sesuaikan nilai persentase sesuai kebutuhan */
-    left: 0; /* Sesuaikan nilai persentase sesuai kebutuhan */
-    right: 0; /* Sesuaikan nilai persentase sesuai kebutuhan */
-    bottom: 0; /* Sesuaikan nilai persentase sesuai kebutuhan */
 }
 
 .info-button-save {

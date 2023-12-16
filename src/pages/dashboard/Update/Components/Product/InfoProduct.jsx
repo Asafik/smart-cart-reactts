@@ -5,18 +5,12 @@ import './infoproduct.css';
 const InfoProduct = () => {
     return (
         <div className='info-product'>
-            <Row>
-                <Col sm={8}></Col>
-                <Col>
-                    <div className='empty-space'></div>
-                </Col>
-            </Row>
             <form>
                 <Row className='form-group'>
                     <Col sm={2}>
                         <label htmlFor='productName'>Nama Produk:</label>
                     </Col>
-                    <Col sm={6}>
+                    <Col>
                         <input
                             type='text'
                             className='form-control no-border-radius-right'
@@ -28,37 +22,9 @@ const InfoProduct = () => {
 
                 <Row className='form-group'>
                     <Col sm={2}>
-                        <label htmlFor='productSku'>SKU:</label>
-                    </Col>
-                    <Col sm={6}>
-                        <input
-                            type='text'
-                            className='form-control no-border-radius-right'
-                            id='productSku'
-                            placeholder='Masukkan SKU'
-                        />
-                    </Col>
-                </Row>
-
-                <Row className='form-group'>
-                    <Col sm={2}>
-                        <label htmlFor='productBarcode'>Barcode:</label>
-                    </Col>
-                    <Col sm={6}>
-                        <input
-                            type='text'
-                            className='form-control no-border-radius-right'
-                            id='productBarcode'
-                            placeholder='Masukkan Barcode'
-                        />
-                    </Col>
-                </Row>
-
-                <Row className='form-group'>
-                    <Col sm={2}>
                         <label htmlFor='productDescription'>Deskripsi:</label>
                     </Col>
-                    <Col sm={6}>
+                    <Col>
                         <textarea
                             className='form-control no-border-radius-right'
                             id='productDescription'

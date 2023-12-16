@@ -7,7 +7,6 @@ import {
     FaEnvelope,
     FaBell,
     FaFlag,
-    FaUser,
     FaSignOutAlt,
 } from 'react-icons/fa';
 
@@ -54,30 +53,16 @@ const App = () => {
                             </div>
                             <FaFlag className='iconss FaFlag' />
                         </div>
-                        <Dropdown>
-                            <Dropdown.Toggle
-                                variant='transparent'
-                                id='dropdown-basic'
-                            >
-                                <img
-                                    src='assets/img/profil/kera.jpg'
-                                    alt='Your Image'
-                                />
-                                <span className='name'>Kentang</span>
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item as={Link} to='/edit-profile'>
-                                    <FaUser /> Edit Profile
-                                </Dropdown.Item>
-                                <Dropdown.Item as={Link} to='/logout'>
-                                    <FaSignOutAlt /> Logout
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
+
+                        <img
+                            src='assets/img/profil/kera.jpg'
+                            alt='Your Image'
+                        />
+                        <span className='name'>admin</span>
                     </div>
                 </div>
                 <div className='sidebar'>
-                    <Nav defaultAc tiveKey='/dashboard' className='flex-column'>
+                    <Nav defaultActiveKey='/dashboard' className='flex-column'>
                         <Nav.Link href='/dashboard' className='dashboard-link'>
                             <FaHome className='dashboard-icon' /> Dashboard
                         </Nav.Link>
@@ -94,7 +79,14 @@ const App = () => {
                             <FaPlus className='tambah-produk-icon' /> Tambahkan
                             Produk
                         </Nav.Link>
+
+                       
                     </Nav>
+
+                    <button className='keluar-button'>
+    <FaSignOutAlt className='keluar-icon' />
+    Keluar
+</button>
                 </div>
             </div>
         </>

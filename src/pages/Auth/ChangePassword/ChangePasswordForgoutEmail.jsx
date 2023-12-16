@@ -44,14 +44,19 @@ const ChangePasswordForgoutEmail = () => {
                                 value={newPassword}
                                 onChange={handleNewPasswordChange}
                             />
-                            <div className='password-toggle-icon-change-password-email' onClick={handleTogglePasswordVisibility}>
+                            <div
+                                className='password-toggle-icon-change-password-email'
+                                onClick={handleTogglePasswordVisibility}
+                            >
                                 {showPassword ? <PiEyeClosed /> : <PiEye />}
                             </div>
                         </div>
                     </div>
 
                     <div className='input-with-icon-change-password-email'>
-                        <label htmlFor='confirmPassword'>Konfirmasi Kata Sandi Baru</label>
+                        <label htmlFor='confirmPassword'>
+                            Konfirmasi Kata Sandi Baru
+                        </label>
                         <div className='password-input-change-password-email'>
                             <input
                                 type={showPassword ? 'text' : 'password'}
@@ -59,7 +64,10 @@ const ChangePasswordForgoutEmail = () => {
                                 value={confirmPassword}
                                 onChange={handleConfirmPasswordChange}
                             />
-                            <div className='password-toggle-icon-change-password-email' onClick={handleTogglePasswordVisibility}>
+                            <div
+                                className='password-toggle-icon-change-password-email'
+                                onClick={handleTogglePasswordVisibility}
+                            >
                                 {showPassword ? <PiEyeClosed /> : <PiEye />}
                             </div>
                         </div>

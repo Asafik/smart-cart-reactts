@@ -2,7 +2,7 @@ import Navbar from '../../components/Navbar/NavbarComponents';
 import Footer from '../../components/Footer/FooterComponents';
 
 import { Container, Row, Col } from 'react-bootstrap';
-import {FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import {
     BsArrowLeftCircle,
     BsArrowRightCircle,

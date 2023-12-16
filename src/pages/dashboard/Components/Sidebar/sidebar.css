@@ -140,3 +140,45 @@
     border-radius: 5px; /* Radius sudut kotak */
     color: #fff;
 }
+
+
+.keluar-button {
+    position: fixed;
+    top: 91%; /* Sesuaikan dengan jarak dari bagian atas layar */
+    right: 92%; /* Sesuaikan dengan jarak dari bagian kanan layar */
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 1000; /* Sesuaikan sesuai kebutuhan */
+    color: #ffa506; 
+    border: 1px solid #ffa506;
+    border-radius: 8px;
+    width: 90px;
+    height: 40px;
+    font-weight: bold;
+ }
+
+.keluar-icon {
+   
+    color: #ffa506;
+    margin-right: 8px;
+
+}
+
+.keluar-button:hover {
+    background-color: #ffa506;
+    color: white;
+
+}
+
+.keluar-button svg:hover {
+    color: white;
+}
+
+/* Add more styling as needed */
+
+
+/* Add more styling as needed */

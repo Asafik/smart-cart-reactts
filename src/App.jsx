@@ -21,7 +21,6 @@ import Dashboard from './pages/dashboard/Dashboard/Dashboard';
 import AddProduct from './pages/dashboard/Add/Product/AddProduct';
 import Listproduct from './pages/dashboard/List/Product/Listproduct';
 import Update from './pages/dashboard/Update/Product/Update';
-import EditProfil from './pages/dashboard/Profil/Edit/EditProfil';
 
 //Profile Page
 import Informasi from './pages/Profil/Informasi/Informasi';
@@ -55,7 +54,6 @@ function App() {
                     <Route path='/produk-baru' Component={AddProduct} />
                     <Route path='/list-produk' Component={Listproduct} />
                     <Route path='/update-produk' Component={Update} />
-                    <Route path='/edit-profile' Component={EditProfil} />
                     <Route path='/informasi' Component={Informasi} />
                     <Route path='/ubah-kata-sandi' Component={ChangePassword} />
                     <Route path='/notifikasi' Component={Notifikasi} />
