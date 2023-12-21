@@ -1,0 +1,39 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-form {
+    width: 380px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Menyesuaikan bayangan dengan ketebalan 10px */
+}
+
+.register-form img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto 0px auto; /* Mengatur margin atas 20px, bawah 30px, dan memusatkan gambar horizontal */
+    max-height: 100px; /* Atur tinggi maksimum gambar */
+    /* Properti lain sesuai kebutuhan */
+}
+
+.register-form-content {
+    text-align: center;
+}
+
+
+
+.form-control-register {
+    width: 100%; /* Ubah lebar input menjadi 100% dari container-nya */
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #030202;
+    border-radius: 10px;
+}

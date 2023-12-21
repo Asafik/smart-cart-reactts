@@ -1,0 +1,45 @@
+/* CSS untuk SearchComponent */
+
+.search-container {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.search-wrapper input {
+    padding: 5px 5px;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Gaya ikon pencarian */
+.search-icon {
+    font-size: 18px;
+    color: #7e7e7e;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 30px;
+}
+
+/* Hover effect untuk ikon pencarian */
+.search-icon:hover {
+    color: #000000;
+    font-size: 23px;
+}
+
+/* Transisi hover untuk input */
+.search-wrapper input:hover {
+    background-color: #f5f5f5;
+}

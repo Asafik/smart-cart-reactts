@@ -1,0 +1,61 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 380px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1); /* Menyesuaikan bayangan dengan ketebalan 10px */
+}
+
+.login-form img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto 0px auto; /* Mengatur margin atas 20px, bawah 30px, dan memusatkan gambar horizontal */
+    max-height: 100px; /* Atur tinggi maksimum gambar */
+    /* Properti lain sesuai kebutuhan */
+}
+
+.login-form-content {
+    text-align: center;
+}
+
+.form-control-login {
+    width: 100%; /* Ubah lebar input menjadi 100% dari container-nya */
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #030202;
+    border-radius: 10px;
+}
+
+/* CSS untuk menambahkan ikon di sebelah kiri input */
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon input {
+    padding-left: 33px; /* Mengatur padding kiri agar ikon tidak bertabrakan dengan teks */
+}
+
+.input-icon .icon {
+    position: absolute;
+    left: 8px; /* Atur jarak antara ikon dan tepi input */
+    top: 54%; /* Menggeser ikon ke bawah */
+    transform: translateY(-50%);
+    color: #aaa; /* Warna ikon */
+}
+
+.login-submit {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -20,8 +20,8 @@ const ForgotPassword = () => {
                     </p>
                     <Form className='inputan-forgout-password'>
                         <Form.Group controlId='formEmail'>
-                            <div className='input-with-icon'>
-                                <AiOutlineMail className='icon-forgout-' />
+                            <div className='input-icon-input'>
+                                <AiOutlineMail className='icon-forgout-password' />
                                 <Form.Control type='email' required />
                             </div>
                         </Form.Group>

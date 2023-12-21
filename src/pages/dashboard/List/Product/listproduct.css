@@ -17,17 +17,34 @@
 
 .list-product-detail h5 {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .list-product-detail .container {
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 10px;
+}
+
+.list-product .container button {
+    background-color: #ffa506;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+    width: 200px;
+    height: auto;
+}
+.list-product .container button:hover {
+    background-color: blue;
+}
+
+.list-product .container button svg {
+    margin-right: 5px;
+    font-size: 20px;
 }
 
 .list-product-detail .search {
-    margin-right: 120px;
+    margin-right: 25%;
     margin-top: -10px;
 }
 
@@ -150,4 +167,15 @@
 
 .edit svg:hover {
     color: red;
+}
+
+/* Tambahkan class baru untuk mengatur tata letak horizontal */
+.horizontal-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Jarak antar input */
+    margin-top: 15px;
+}
+.horizontal-inputs .from-label {
+    margin-bottom: 0px;
 }

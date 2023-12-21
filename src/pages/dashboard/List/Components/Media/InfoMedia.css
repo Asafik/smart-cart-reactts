@@ -1,0 +1,61 @@
+.infomedia-add {
+    background-color: #ffffff; /* warna putih */
+    box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.1); /* efek bayangan dengan warna hitam transparan dan ketebalan 10px */
+    /* tambahkan properti lain sesuai kebutuhan */
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.infomedia-add .h3-text-p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infomedia-add .h3-text-p h3 {
+    font-size: 25px;
+}
+
+.infomedia-add .h3-text-p p {
+    margin-top: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.drop-area label {
+    margin-top: 60px;
+    font-size: 15px;
+}
+
+.drop-area p {
+    margin: 10px;
+    padding: 04px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #4b78ac;
+    background-color: #e6e6e6;
+    border: none;
+
+    /* Menambahkan lebar dan tinggi */
+    width: 160px; /* Sesuaikan dengan kebutuhan */
+    height: 30px; /* Sesuaikan dengan kebutuhan */
+    margin-left: 27%;
+}
+
+.drop-area img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}

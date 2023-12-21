@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Auth Page
-import Login from './pages/Auth/Login';
-import Register from './pages/Auth/Register';
+import Login from './pages/Auth/Login/Login';
+import Register from './pages/Auth/Register/Register';
 import ForgotPassword from './pages/Auth/ForgoutPassword/ForgoutPassword';
 import ForgoutPasswordEmail from './pages/Auth/ForgoutPasswordEmail/ForgoutPasswordEmail';
 import ChangePasswordForgoutEmail from './pages/Auth/ChangePassword/ChangePasswordForgoutEmail';
@@ -18,9 +18,9 @@ import Cart from './pages/Cart/Product/Cart';
 
 //Dashboard Page
 import Dashboard from './pages/dashboard/Dashboard/Dashboard';
-import AddProduct from './pages/dashboard/Add/Product/AddProduct';
 import Listproduct from './pages/dashboard/List/Product/Listproduct';
 import Update from './pages/dashboard/Update/Product/Update';
+import Kategori from './pages/dashboard/Kategori/Kategori';
 
 //Profile Page
 import Informasi from './pages/Profil/Informasi/Informasi';
@@ -51,7 +51,6 @@ function App() {
                     <Route path='/tentang-kami' Component={About} />
                     <Route path='/cek-status' Component={Cekstatus} />
                     <Route path='/dashboard' Component={Dashboard} />
-                    <Route path='/produk-baru' Component={AddProduct} />
                     <Route path='/list-produk' Component={Listproduct} />
                     <Route path='/update-produk' Component={Update} />
                     <Route path='/informasi' Component={Informasi} />
@@ -81,6 +80,7 @@ function App() {
                         path='/buat-kata-sandi-baru'
                         Component={ChangePasswordForgoutEmail}
                     />
+                    <Route path='/kategori-produk' Component={Kategori} />
                 </Routes>
             </Router>
         </>
